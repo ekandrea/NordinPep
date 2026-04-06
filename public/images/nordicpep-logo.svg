@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0e14;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5bbfcf;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a8e9d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" rx="80" fill="url(#bgGrad)"/>
+  <rect x="2" y="2" width="396" height="396" rx="78" fill="none" stroke="#1a2a3a" stroke-width="3"/>
+  <!-- NP text -->
+  <text x="200" y="265" text-anchor="middle" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="180" fill="url(#accentGrad)" letter-spacing="-10">NP</text>
+</svg>
