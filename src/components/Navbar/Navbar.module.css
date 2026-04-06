@@ -167,7 +167,7 @@
 @media (max-width: 768px) {
   .links {
     position: fixed;
-    top: var(--nav-height);
+    top: calc(var(--nav-height) + 36px);
     left: 0;
     right: 0;
     flex-direction: column;
@@ -175,6 +175,7 @@
     border-bottom: 1px solid var(--border);
     padding: 16px 24px;
     gap: 4px;
+    z-index: 99;
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;

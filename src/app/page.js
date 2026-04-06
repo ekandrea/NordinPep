@@ -103,33 +103,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className={`section ${styles.testimonials}`}>
-        <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: 32 }}>
-            <h2 className={styles.sectionTitle}>Vad våra kunder säger</h2>
-            <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: 8 }}>
-              <span style={{ color: '#f5a623' }}>★★★★★</span> 4.8/5 baserat på 120+ omdömen
-            </p>
-          </div>
-          <div className={styles.reviewGrid}>
-            {[
-              { name: 'Marcus L.', role: 'Stockholm', text: 'Snabb leverans och riktigt bra kvalitet. Analysbeviset som följde med BPC-157 var imponerande — precis vad man behöver för seriös forskning.' },
-              { name: 'Emma K.', role: 'Göteborg', text: 'Stack Engine-verktyget gjorde det superenkelt att hitta rätt produkter för mitt forskningsområde. Snabb leverans och bra COA.' },
-              { name: 'Johan A.', role: 'Malmö', text: 'Äntligen en svensk sida med ordentlig kvalitetskontroll. Snabb leverans och analysbevis på allt. Rekommenderar.' },
-            ].map((review, i) => (
-              <div key={i} className={styles.reviewCard}>
-                <p className={styles.reviewText}>&ldquo;{review.text}&rdquo;</p>
-                <div className={styles.reviewer}>
-                  <strong>{review.name}</strong>
-                  <span>{review.role}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Newsletter */}
       <Newsletter />
 

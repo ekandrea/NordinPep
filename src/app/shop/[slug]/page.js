@@ -91,10 +91,6 @@ export default function ProductPage() {
             <h1 className={styles.name}>{product.name}</h1>
             <p className={styles.subtitle}>{product.subtitle}</p>
 
-            <div className={styles.rating}>
-              <span className={styles.stars}>★★★★★</span>
-              <span className={styles.ratingText}>4.8/5 (120+ omdömen)</span>
-            </div>
 
             <p className={styles.price}>{product.price} kr</p>
 
