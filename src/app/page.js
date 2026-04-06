@@ -7,10 +7,10 @@ import { getPopularProducts } from '@/data/products';
 import styles from './page.module.css';
 
 const trustBadges = [
-  { icon: '◎', title: 'COA-Verifierad', desc: 'Tredjepartstestad' },
+  { icon: '◎', title: 'Labbtestad', desc: 'Tredjepartsverifierad renhet' },
   { icon: '◆', title: 'Fri Frakt', desc: 'Över 500 kr i Sverige' },
   { icon: '▣', title: 'Diskret Leverans', desc: 'Omärkta paket' },
-  { icon: '⬡', title: '≥98% Renhet', desc: 'HPLC-verifierad' },
+  { icon: '⬡', title: '≥98% Renhet', desc: 'Varje batch testad' },
 ];
 
 export default function Home() {
@@ -22,22 +22,22 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroGlow} />
         <div className={`container ${styles.heroInner}`}>
-          <span className={styles.badge}>Uteslutande för forskningsändamål</span>
+          <span className={styles.badge}>Forskningspeptider</span>
           <h1 className={styles.title}>
-            Forskningspeptider
+            Premium Peptider
             <br />
-            <span className={styles.accent}>Skandinavisk Kvalitet</span>
+            <span className={styles.accent}>Från Skandinavien</span>
           </h1>
           <p className={styles.subtitle}>
-            Premium syntetiska peptider med ≥98% renhet, COA-verifierade av oberoende
-            laboratorier. Diskret leverans inom hela Sverige och EU.
+            Labbtestade peptider med minst 98% renhet. Snabb och diskret leverans
+            i hela Sverige. Analysbevis på varje produkt.
           </p>
           <div className={styles.ctas}>
             <Link href="/shop" className="btn btn-primary">
               Se produkter
             </Link>
             <Link href="/stack-engine" className="btn btn-secondary">
-              Testa Stack Engine
+              Hitta rätt peptider
             </Link>
           </div>
         </div>
@@ -64,9 +64,9 @@ export default function Home() {
       <section className={`section ${styles.popular}`}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>Mest Populära</h2>
+            <h2 className={styles.sectionTitle}>Populärast just nu</h2>
             <Link href="/shop" className={styles.viewAll}>
-              Visa alla produkter &rarr;
+              Alla produkter &rarr;
             </Link>
           </div>
           <div className={styles.productGrid}>
@@ -82,22 +82,22 @@ export default function Home() {
         <div className="container">
           <div className={styles.stackCard}>
             <div className={styles.stackContent}>
-              <span className={styles.stackBadge}>Exklusivt Verktyg</span>
-              <h2 className={styles.stackTitle}>Stack Engine</h2>
+              <span className={styles.stackBadge}>Vet inte var du ska börja?</span>
+              <h2 className={styles.stackTitle}>Hitta din peptid-stack</h2>
               <p className={styles.stackDesc}>
-                Svara på 3 frågor om ditt forskningsfokus, erfarenhetsnivå och budget
-                — och få en personlig peptidstack-rekommendation skräddarsydd för dina
-                laboratoriebehov.
+                Svara på 3 snabba frågor om vad du vill uppnå, din erfarenhet och budget.
+                Vi föreslår exakt vilka produkter som passar dig — sen lägger du allt
+                i varukorgen med ett klick.
               </p>
               <Link href="/stack-engine" className="btn btn-primary">
-                Bygg din Stack
+                Starta quizet
               </Link>
             </div>
             <div className={styles.stackVisual}>
-              <div className={styles.stackStep}>1. Forskningsintresse</div>
-              <div className={styles.stackStep}>2. Erfarenhetsnivå</div>
-              <div className={styles.stackStep}>3. Budgetram</div>
-              <div className={styles.stackResult}>→ Din Personliga Stack</div>
+              <div className={styles.stackStep}>1. Vad vill du uppnå?</div>
+              <div className={styles.stackStep}>2. Hur erfaren är du?</div>
+              <div className={styles.stackStep}>3. Vad är din budget?</div>
+              <div className={styles.stackResult}>→ Din personliga stack</div>
             </div>
           </div>
         </div>
@@ -107,13 +107,13 @@ export default function Home() {
       <section className={`section ${styles.testimonials}`}>
         <div className="container">
           <h2 className={styles.sectionTitle} style={{ textAlign: 'center', marginBottom: 32 }}>
-            Vad forskare säger
+            Vad våra kunder säger
           </h2>
           <div className={styles.reviewGrid}>
             {[
-              { name: 'Dr. M. Lindqvist', role: 'Molekylärbiologi, Uppsala', text: 'Konsekvent renhet och snabb leverans. COA-dokumentationen är exemplarisk — precis vad man behöver för reproducerbar forskning.' },
-              { name: 'K. Andersson', role: 'Forskningstekniker, Lund', text: 'Stack Engine-verktyget sparade tid vid planeringen av vårt peptidprotokoll. Produktkvaliteten matchar de internationella leverantörerna.' },
-              { name: 'Dr. E. Johansson', role: 'Farmakologi, Karolinska', text: 'Äntligen en nordisk leverantör med riktigt renhetskontroll. Diskret och professionell hantering av varje beställning.' },
+              { name: 'Marcus L.', role: 'Stockholm', text: 'Snabb leverans och riktigt bra kvalitet. Har testat BPC-157 och märker tydlig skillnad i min återhämtning efter träning.' },
+              { name: 'Emma K.', role: 'Göteborg', text: 'Stack Engine-verktyget gjorde det superenkelt att välja rätt. Beställde GHK-Cu för hudforskning — nöjd!' },
+              { name: 'Johan A.', role: 'Malmö', text: 'Äntligen en svensk sida med ordentlig kvalitetskontroll. Diskret förpackning och analysbevis på allt. Rekommenderar.' },
             ].map((review, i) => (
               <div key={i} className={styles.reviewCard}>
                 <p className={styles.reviewText}>&ldquo;{review.text}&rdquo;</p>
@@ -136,11 +136,9 @@ export default function Home() {
           <div className={styles.introInner}>
             <h2 className={styles.introTitle}>Varför NordicPep?</h2>
             <p className={styles.introText}>
-              Med bas i Skandinavien kombinerar vi rigorösa kvalitetsstandarder med den
-              transparens forskare förtjänar. Varje produkt levereras med ett analysbevis
-              från ett ackrediterat oberoende laboratorium — inga undantag. Våra peptider
-              kommer från granskade europeiska leverantörer och förvaras under strikta
-              kylkedjor tills de når ditt labb.
+              Vi säljer bara peptider vi själva skulle använda. Varje batch testas av
+              ett oberoende labb och levereras med analysbevis. Inga mellanhänder,
+              inga kompromisser — bara ren kvalitet direkt från Europa till din dörr.
             </p>
           </div>
         </div>

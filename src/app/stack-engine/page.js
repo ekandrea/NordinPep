@@ -54,20 +54,27 @@ export default function StackEngine() {
     setRecommendation(null);
   };
 
+  const interestDescriptions = {
+    'Återhämtning & Skador': 'Snabbare tillbaka efter träning, skador eller operation',
+    'Fokus & Stress': 'Bättre koncentration, mindre stress, skarpare hjärna',
+    'Hud & Anti-Aging': 'Yngre hud, mer kollagen, bromsa åldrandet',
+    'Mage & Inflammation': 'Tarmhälsa, mindre inflammation, bättre immunförsvar',
+  };
+
   return (
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.badge}>Personliga Rekommendationer</span>
+          <span className={styles.badge}>Hitta rätt peptider för dig</span>
           <h1 className={styles.title}>Stack Engine</h1>
           <p className={styles.subtitle}>
-            Svara på 3 frågor och få en skräddarsydd peptidstack för din forskning.
+            Svara på 3 snabba frågor — vi rekommenderar exakt vilka peptider du behöver.
           </p>
         </div>
 
         {/* Progress */}
         <div className={styles.progress}>
-          {['Intresse', 'Erfarenhet', 'Budget', 'Resultat'].map((label, i) => (
+          {['Mål', 'Erfarenhet', 'Budget', 'Din Stack'].map((label, i) => (
             <div
               key={label}
               className={`${styles.progressStep} ${i <= step ? styles.progressActive : ''} ${i < step ? styles.progressDone : ''}`}
@@ -82,7 +89,7 @@ export default function StackEngine() {
           {/* Steg 1 */}
           {step === 0 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Vad är ditt primära forskningsintresse?</h2>
+              <h2 className={styles.question}>Vad vill du uppnå?</h2>
               <div className={styles.options}>
                 {researchInterests.map((ri) => (
                   <button
@@ -90,7 +97,8 @@ export default function StackEngine() {
                     className={`${styles.option} ${interest === ri ? styles.optionActive : ''}`}
                     onClick={() => setInterest(ri)}
                   >
-                    {ri}
+                    <strong>{ri}</strong>
+                    <span className={styles.optionDesc}>{interestDescriptions[ri]}</span>
                   </button>
                 ))}
               </div>
@@ -100,7 +108,7 @@ export default function StackEngine() {
           {/* Steg 2 */}
           {step === 1 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Erfarenhetsnivå med peptidforskning?</h2>
+              <h2 className={styles.question}>Hur mycket vet du om peptider?</h2>
               <div className={styles.options}>
                 {experienceLevels.map((el) => (
                   <button
@@ -118,7 +126,7 @@ export default function StackEngine() {
           {/* Steg 3 */}
           {step === 2 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Budgetram för forskning?</h2>
+              <h2 className={styles.question}>Vad är din budget?</h2>
               <div className={styles.options}>
                 {budgetRanges.map((br) => (
                   <button
@@ -136,7 +144,7 @@ export default function StackEngine() {
           {/* Resultat */}
           {step === 3 && recommendation && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Din Rekommenderade Stack</h2>
+              <h2 className={styles.question}>Din personliga stack</h2>
               <p className={styles.resultMeta}>
                 Baserat på: {interest} · {experience} · {budgetRanges.find(b => b.value === budget)?.label}
               </p>
@@ -155,11 +163,11 @@ export default function StackEngine() {
                 ))}
               </div>
               <div className={styles.resultTotal}>
-                <span>Stack-totalt</span>
+                <span>Totalt</span>
                 <strong>{totalPrice} kr</strong>
               </div>
               <button className="btn btn-primary" onClick={addStackToCart} style={{ width: '100%' }}>
-                Lägg hela stacken i varukorgen — {totalPrice} kr
+                Lägg allt i varukorgen — {totalPrice} kr
               </button>
             </div>
           )}
@@ -178,14 +186,14 @@ export default function StackEngine() {
                 disabled={!canProceed}
                 style={{ marginLeft: 'auto' }}
               >
-                {step === 2 ? 'Visa rekommendation' : 'Nästa →'}
+                {step === 2 ? 'Visa min stack' : 'Nästa →'}
               </button>
             </div>
           )}
 
           {step === 3 && (
             <div className={styles.nav}>
-              <button className="btn btn-ghost" onClick={handleBack}>&larr; Justera</button>
+              <button className="btn btn-ghost" onClick={handleBack}>&larr; Ändra svar</button>
               <button className="btn btn-secondary" onClick={reset}>Börja om</button>
             </div>
           )}

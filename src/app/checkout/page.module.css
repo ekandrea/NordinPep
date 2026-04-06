@@ -129,6 +129,87 @@
   font-size: 1.05rem;
 }
 
+.paymentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.paymentMethod {
+  padding: 24px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.paymentLabel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.paymentDesc {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.paymentValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.paymentNote {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.paymentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.paymentDetails div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentDetails strong {
+  color: var(--text-primary);
+}
+
+.paymentDivider {
+  text-align: center;
+  padding: 12px 0;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.paymentInfo {
+  padding: 16px;
+  background: rgba(74, 158, 173, 0.06);
+  border: 1px solid rgba(74, 158, 173, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.paymentInfo p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 @media (max-width: 1024px) {
   .layout {
     grid-template-columns: 1fr;

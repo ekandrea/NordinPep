@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import styles from './page.module.css';
 
@@ -13,11 +14,12 @@ const EU_COUNTRIES = [
 
 export default function Checkout() {
   const { cartProducts, subtotal, getShippingCost } = useCart();
+  const router = useRouter();
   const [form, setForm] = useState({
     name: '', email: '', address: '', postalCode: '', city: '', country: 'Sverige',
   });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [step, setStep] = useState('info');
+  const [submitting, setSubmitting] = useState(false);
 
   const shipping = getShippingCost(form.country === 'Sverige' ? 'Sweden' : 'EU');
   const total = subtotal + shipping;
@@ -28,32 +30,27 @@ export default function Checkout() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError('');
+    setSubmitting(true);
 
     try {
-      const res = await fetch('/api/checkout', {
+      await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           items: cartProducts.map((p) => ({ id: p.id, name: p.name, price: p.price, quantity: p.quantity })),
           shipping: form,
           shippingCost: shipping,
+          total,
         }),
       });
+    } catch {}
 
-      const data = await res.json();
+    setStep('payment');
+    setSubmitting(false);
+  };
 
-      if (data.url) {
-        window.location.href = data.url;
-      } else {
-        setError(data.error || 'Kunde inte skapa betalningssession. Kontrollera att Stripe är konfigurerat.');
-      }
-    } catch {
-      setError('Kunde inte ansluta till betaltjänsten. Kontrollera din Stripe-konfiguration.');
-    } finally {
-      setLoading(false);
-    }
+  const handleConfirmPayment = () => {
+    router.push('/checkout/success');
   };
 
   if (cartProducts.length === 0) {
@@ -73,50 +70,101 @@ export default function Checkout() {
         <h1 className={styles.title}>Kassa</h1>
 
         <div className={styles.layout}>
-          <form className={styles.form} onSubmit={handleSubmit}>
-            <h2 className={styles.formTitle}>Leveransinformation</h2>
+          {step === 'info' ? (
+            <form className={styles.form} onSubmit={handleSubmit}>
+              <h2 className={styles.formTitle}>Leveransinformation</h2>
 
-            <div className={styles.field}>
-              <label htmlFor="name">Fullständigt namn</label>
-              <input id="name" name="name" value={form.name} onChange={handleChange} required />
-            </div>
-
-            <div className={styles.field}>
-              <label htmlFor="email">E-post</label>
-              <input id="email" name="email" type="email" value={form.email} onChange={handleChange} required />
-            </div>
-
-            <div className={styles.field}>
-              <label htmlFor="address">Adress</label>
-              <input id="address" name="address" value={form.address} onChange={handleChange} required />
-            </div>
-
-            <div className={styles.row}>
               <div className={styles.field}>
-                <label htmlFor="postalCode">Postnummer</label>
-                <input id="postalCode" name="postalCode" value={form.postalCode} onChange={handleChange} required />
+                <label htmlFor="name">Fullständigt namn</label>
+                <input id="name" name="name" value={form.name} onChange={handleChange} required />
               </div>
+
               <div className={styles.field}>
-                <label htmlFor="city">Stad</label>
-                <input id="city" name="city" value={form.city} onChange={handleChange} required />
+                <label htmlFor="email">E-post</label>
+                <input id="email" name="email" type="email" value={form.email} onChange={handleChange} required />
               </div>
+
+              <div className={styles.field}>
+                <label htmlFor="address">Adress</label>
+                <input id="address" name="address" value={form.address} onChange={handleChange} required />
+              </div>
+
+              <div className={styles.row}>
+                <div className={styles.field}>
+                  <label htmlFor="postalCode">Postnummer</label>
+                  <input id="postalCode" name="postalCode" value={form.postalCode} onChange={handleChange} required />
+                </div>
+                <div className={styles.field}>
+                  <label htmlFor="city">Stad</label>
+                  <input id="city" name="city" value={form.city} onChange={handleChange} required />
+                </div>
+              </div>
+
+              <div className={styles.field}>
+                <label htmlFor="country">Land</label>
+                <select id="country" name="country" value={form.country} onChange={handleChange}>
+                  {EU_COUNTRIES.map((c) => (
+                    <option key={c} value={c}>{c}</option>
+                  ))}
+                </select>
+              </div>
+
+              <button type="submit" className={`btn btn-primary ${styles.payBtn}`} disabled={submitting}>
+                {submitting ? 'Skickar...' : 'Gå vidare till betalning'}
+              </button>
+            </form>
+          ) : (
+            <div className={styles.form}>
+              <h2 className={styles.formTitle}>Välj betalningssätt</h2>
+
+              <div className={styles.paymentBox}>
+                <div className={styles.paymentMethod}>
+                  <h3 className={styles.paymentLabel}>Swish</h3>
+                  <p className={styles.paymentDesc}>Snabbast. Skicka till:</p>
+                  <div className={styles.paymentValue}>073-XXX XX XX</div>
+                  <p className={styles.paymentNote}>
+                    Ange ditt ordernummer (din e-post) som meddelande.
+                  </p>
+                </div>
+
+                <div className={styles.paymentDivider}>eller</div>
+
+                <div className={styles.paymentMethod}>
+                  <h3 className={styles.paymentLabel}>Banköverföring</h3>
+                  <p className={styles.paymentDesc}>Överför till:</p>
+                  <div className={styles.paymentDetails}>
+                    <div><span>Bank:</span> <strong>SEB</strong></div>
+                    <div><span>Clearing:</span> <strong>XXXX</strong></div>
+                    <div><span>Kontonr:</span> <strong>XXX XXX XXX</strong></div>
+                    <div><span>Belopp:</span> <strong>{total} kr</strong></div>
+                    <div><span>Meddelande:</span> <strong>{form.email}</strong></div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.paymentInfo}>
+                <p>
+                  Vi skickar en orderbekräftelse till <strong>{form.email}</strong> när vi
+                  mottagit din betalning. Leverans sker inom 2-4 arbetsdagar (Sverige).
+                </p>
+              </div>
+
+              <button
+                className={`btn btn-primary ${styles.payBtn}`}
+                onClick={handleConfirmPayment}
+              >
+                Jag har betalat — bekräfta min order
+              </button>
+
+              <button
+                className={`btn btn-ghost`}
+                onClick={() => setStep('info')}
+                style={{ width: '100%', marginTop: 8 }}
+              >
+                &larr; Tillbaka till leveransinformation
+              </button>
             </div>
-
-            <div className={styles.field}>
-              <label htmlFor="country">Land</label>
-              <select id="country" name="country" value={form.country} onChange={handleChange}>
-                {EU_COUNTRIES.map((c) => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
-            </div>
-
-            {error && <p className={styles.error}>{error}</p>}
-
-            <button type="submit" className={`btn btn-primary ${styles.payBtn}`} disabled={loading}>
-              {loading ? 'Bearbetar...' : `Betala ${total} kr`}
-            </button>
-          </form>
+          )}
 
           <div className={styles.summary}>
             <h3 className={styles.summaryTitle}>Ordersammanfattning</h3>

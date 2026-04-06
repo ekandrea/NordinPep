@@ -88,7 +88,7 @@ export default function ProductPage() {
 
             {product.research && (
               <div className={styles.research}>
-                <h3>Forskningsprofil</h3>
+                <h3>Vad säger forskningen?</h3>
                 <p>{product.research}</p>
               </div>
             )}
@@ -129,8 +129,7 @@ export default function ProductPage() {
 
             <div className={styles.disclaimer}>
               <p>
-                Denna produkt är avsedd för forsknings- och laboratoriebruk. Det är inte
-                ett läkemedel, livsmedel eller kosmetika. Ej avsedd för mänsklig konsumtion.
+                Säljs som forskningsprodukt. Inte ett läkemedel. Ej för mänsklig konsumtion.
               </p>
             </div>
           </div>
