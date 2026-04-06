@@ -24,7 +24,7 @@ export const products = [
       'En av de mest populära forskningspeptiderna. Över 100 publicerade studier i prekliniska modeller. Fokusområde: återhämtningsmekanismer och tarmfunktion.',
     research:
       'Studerad i över 100 granskade publikationer. Prekliniskt fokus på vävnadsreparation, gastrointestinal funktion och biologiska reparationsmekanismer.',
-    image: '/images/peptide-vial.svg',
+    image: '/images/product-bpc157.svg',
   },
   {
     id: 'selank',
@@ -51,7 +51,7 @@ export const products = [
       'Baserad på tuftsin, en naturlig immunpeptid. Studerad i prekliniska modeller för stressrelaterade mekanismer och kognitiv funktion. Populär inom nootropisk forskning.',
     research:
       'Undersökt i beteendemodeller för stressrelaterade mekanismer, kognition och GABAerg modulering. Studerad för BDNF-uttryck.',
-    image: '/images/peptide-vial.svg',
+    image: '/images/product-selank.svg',
   },
   {
     id: 'semax',
@@ -78,7 +78,7 @@ export const products = [
       'Härledd från ACTH-fragmentet, ett naturligt hormon. Studerad för minne och kognitiv funktion i djurmodeller. Undersöks ofta i kombination med Selank i forskningslitteraturen.',
     research:
       'Studerad för neurotrofiner (BDNF/NGF), dopaminerg modulering och cerebrovaskulära mekanismer i prekliniska modeller.',
-    image: '/images/peptide-vial.svg',
+    image: '/images/product-semax.svg',
   },
   {
     id: 'ghk-cu',
@@ -105,7 +105,7 @@ export const products = [
       'En naturligt förekommande kopparpeptid vars koncentration minskar med åldern. Forskad för kollagensyntes, hudbiologi och antioxidativa mekanismer.',
     research:
       'Publicerade studier om kollagensyntes, fibroblastaktivitet och hur den påverkar över 4 000 gener kopplade till åldrandeprocesser.',
-    image: '/images/peptide-vial.svg',
+    image: '/images/product-ghkcu.svg',
   },
   {
     id: 'epithalon',
@@ -132,7 +132,7 @@ export const products = [
       'Undersökt i prekliniska studier för åldrandeprocesser och telomerasaktivitet. Forskad i samband med melatoninreglering i djurmodeller.',
     research:
       'Studerad för telomerasaktivering, melatoninreglering och livslängd i djurmodeller.',
-    image: '/images/peptide-vial.svg',
+    image: '/images/product-epithalon.svg',
   },
   {
     id: 'kpv',
@@ -159,7 +159,7 @@ export const products = [
       'En tripeptid studerad i prekliniska inflammationsmodeller, med fokus på gastrointestinal funktion och immunmekanismer.',
     research:
       'Studerad för NF-κB-vägshämning, intestinala inflammationsmodeller och antimikrobiella mekanismer.',
-    image: '/images/peptide-vial.svg',
+    image: '/images/product-kpv.svg',
   },
   {
     id: 'bacteriostatic-water',

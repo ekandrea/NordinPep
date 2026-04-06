@@ -1,8 +1,8 @@
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Om Oss',
-  description: 'Lär dig mer om ScandiPep — skandinavisk precision möter forskningskvalitet.',
+  title: 'Om ScandiPep — Sveriges Peptidbutik | Skandinavisk Kvalitet',
+  description: 'ScandiPep levererar forskningspeptider med ≥98% renhet från Skandinavien. Analysbevis på varje batch, europeiska leverantörer, snabb svensk leverans.',
 };
 
 const values = [

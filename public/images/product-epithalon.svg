@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#201a2a"/>
+      <stop offset="100%" style="stop-color:#100a1a"/>
+    </linearGradient>
+    <linearGradient id="lg5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a4aad;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#8a4aad;stop-opacity:0.05"/>
+    </linearGradient>
+    <linearGradient id="cg5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a4aad"/>
+      <stop offset="100%" style="stop-color:#6a3a8d"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="268" rx="50" ry="8" fill="rgba(138,74,173,0.08)"/>
+  <rect x="60" y="60" width="80" height="190" rx="10" fill="url(#vg5)" stroke="#2a2a3a" stroke-width="1.5"/>
+  <rect x="68" y="68" width="12" height="170" rx="6" fill="rgba(255,255,255,0.04)"/>
+  <rect x="64" y="150" width="72" height="96" rx="8" fill="url(#lg5)"/>
+  <rect x="72" y="40" width="56" height="24" rx="4" fill="url(#cg5)"/>
+  <rect x="68" y="56" width="64" height="8" rx="2" fill="#2a2a3a"/>
+  <rect x="72" y="95" width="56" height="50" rx="4" fill="rgba(138,74,173,0.08)" stroke="rgba(138,74,173,0.2)" stroke-width="0.5"/>
+  <text x="100" y="115" text-anchor="middle" fill="rgba(138,74,173,0.6)" font-size="8" font-weight="700" font-family="sans-serif">EPITHALON</text>
+  <text x="100" y="128" text-anchor="middle" fill="rgba(138,74,173,0.35)" font-size="6" font-family="sans-serif">10mg · ≥98%</text>
+  <text x="100" y="140" text-anchor="middle" fill="rgba(138,74,173,0.25)" font-size="5" font-family="sans-serif">ScandiPep</text>
+</svg>
