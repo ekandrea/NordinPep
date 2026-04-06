@@ -52,6 +52,7 @@ export async function POST(request) {
         city: shipping.city,
         postalCode: shipping.postalCode,
         country: shipping.country,
+        items: JSON.stringify(items),
       },
     });
 
