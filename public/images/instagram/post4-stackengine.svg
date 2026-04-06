@@ -10,21 +10,21 @@
     </linearGradient>
   </defs>
   <rect width="1080" height="1080" fill="url(#bg4)"/>
-  <rect x="80" y="80" width="60" height="3" fill="url(#ac4)"/>
   <!-- Hook -->
-  <text x="540" y="200" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#5bbfcf" letter-spacing="4">QUIZ</text>
-  <text x="540" y="330" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="68" fill="#f0f0f5">Vilken peptid</text>
-  <text x="540" y="420" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="68" fill="#f0f0f5">passar ditt</text>
-  <text x="540" y="510" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="68" fill="url(#ac4)">forskningsområde?</text>
-  <!-- Description -->
-  <text x="540" y="610" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="32" fill="#8a8a9a">3 frågor. 30 sekunder.</text>
-  <text x="540" y="660" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="32" fill="#8a8a9a">Personlig rekommendation.</text>
+  <text x="540" y="160" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="38" fill="#5bbfcf">DE FÖRSTA 50 SOM REGISTRERAR SIG</text>
+  <text x="540" y="310" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="#f0f0f5">får 10%</text>
+  <text x="540" y="410" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="#f0f0f5">rabatt på sin</text>
+  <text x="540" y="510" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="url(#ac4)">första order</text>
+  <!-- What you get -->
+  <rect x="200" y="570" width="680" height="3" fill="#2a3a4a"/>
+  <text x="540" y="650" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="30" fill="#f0f0f5">Du får:</text>
+  <text x="540" y="710" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="28" fill="#8a8a9a">✓ 10% rabattkod vid lansering</text>
+  <text x="540" y="760" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="28" fill="#8a8a9a">✓ Förtur på alla produkter</text>
+  <text x="540" y="810" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="28" fill="#8a8a9a">✓ Exklusiva erbjudanden</text>
   <!-- CTA -->
-  <rect x="290" y="730" width="500" height="70" rx="35" fill="url(#ac4)"/>
-  <text x="540" y="776" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#fff">Testa nu — länk i bio</text>
-  <!-- Arrows -->
-  <text x="540" y="880" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#5bbfcf">↓ ↓ ↓</text>
+  <rect x="240" y="870" width="600" height="70" rx="35" fill="url(#ac4)"/>
+  <text x="540" y="916" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#fff">Länk i bio — ta din plats nu</text>
   <!-- Footer -->
-  <rect x="0" y="970" width="1080" height="110" fill="#0d1520"/>
-  <text x="540" y="1040" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="30" fill="#5bbfcf">scandipep.se/stack-engine</text>
+  <rect x="0" y="990" width="1080" height="90" fill="#0d1520"/>
+  <text x="540" y="1045" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="26" fill="#5bbfcf">@scandipep · scandipep.vercel.app</text>
 </svg>

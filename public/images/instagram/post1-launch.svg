@@ -10,21 +10,20 @@
     </linearGradient>
   </defs>
   <rect width="1080" height="1080" fill="url(#bg1)"/>
-  <rect x="80" y="80" width="60" height="3" fill="url(#ac1)"/>
   <!-- Hook -->
-  <text x="540" y="240" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="#f0f0f5">Svenskar beställer</text>
-  <text x="540" y="330" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="#f0f0f5">peptider från</text>
-  <text x="540" y="420" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="#f0f0f5">utlandet.</text>
+  <text x="540" y="180" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="42" fill="#5bbfcf" letter-spacing="2">VISSTE DU ATT...</text>
+  <text x="540" y="330" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="64" fill="#f0f0f5">Svenskar betalar</text>
+  <text x="540" y="420" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="64" fill="#f0f0f5">2-3x mer för</text>
+  <text x="540" y="510" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="64" fill="#f0f0f5">peptider pga</text>
+  <text x="540" y="610" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="url(#ac1)">utlandsfrakt?</text>
   <!-- Punch -->
-  <text x="540" y="550" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="72" fill="url(#ac1)">Tills nu.</text>
-  <!-- Divider -->
-  <rect x="440" y="600" width="200" height="2" fill="#2a3a4a"/>
-  <!-- Description -->
-  <text x="540" y="690" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="34" fill="#8a8a9a">Sveriges första dedikerade peptidbutik.</text>
-  <text x="540" y="740" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="34" fill="#8a8a9a">≥98% renhet. Analysbevis. Svensk leverans.</text>
-  <!-- Logo -->
-  <text x="540" y="880" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="100" fill="url(#ac1)">SP</text>
+  <rect x="200" y="680" width="680" height="3" fill="#2a3a4a"/>
+  <text x="540" y="770" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="500" font-size="36" fill="#8a8a9a">Vi ändrar på det.</text>
+  <text x="540" y="830" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="500" font-size="36" fill="#8a8a9a">Svensk butik. Svenska priser.</text>
+  <!-- CTA -->
+  <rect x="290" y="890" width="500" height="70" rx="35" fill="url(#ac1)"/>
+  <text x="540" y="935" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#fff">Länk i bio — registrera dig</text>
   <!-- Footer -->
-  <rect x="0" y="970" width="1080" height="110" fill="#0d1520"/>
-  <text x="540" y="1040" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="30" fill="#5bbfcf">scandipep.se — Följ oss för lansering</text>
+  <rect x="0" y="990" width="1080" height="90" fill="#0d1520"/>
+  <text x="540" y="1045" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="26" fill="#5bbfcf">@scandipep</text>
 </svg>
