@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['/admin', '/api/', '/checkout'],
       },
     ],
-    sitemap: 'https://nordicpep.se/sitemap.xml',
+    sitemap: 'https://scandipep.se/sitemap.xml',
   };
 }

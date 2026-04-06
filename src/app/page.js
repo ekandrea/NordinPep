@@ -137,7 +137,7 @@ export default function Home() {
       <section className={`section ${styles.intro}`}>
         <div className="container">
           <div className={styles.introInner}>
-            <h2 className={styles.introTitle}>Varför NordicPep?</h2>
+            <h2 className={styles.introTitle}>Varför ScandiPep?</h2>
             <p className={styles.introText}>
               Vi säljer bara peptider som uppfyller våra egna kvalitetskrav. Varje batch
               testas av ett oberoende labb och levereras med analysbevis. Inga mellanhänder,

@@ -161,7 +161,7 @@ När du granskar ett COA, verifiera följande: batch- eller lot-numret matchar d
 
 ## Tredjepartstestning vs intern testning
 
-COA genererade av oberoende tredjepartslaboratorier väger tyngre än intern testning, eftersom de eliminerar potentiella intressekonflikter. Hos NordicPep utfärdas alla COA av ackrediterade oberoende analytiska laboratorier för att säkerställa opartisk kvalitetsverifiering.`,
+COA genererade av oberoende tredjepartslaboratorier väger tyngre än intern testning, eftersom de eliminerar potentiella intressekonflikter. Hos ScandiPep utfärdas alla COA av ackrediterade oberoende analytiska laboratorier för att säkerställa opartisk kvalitetsverifiering.`,
   },
 ];
 

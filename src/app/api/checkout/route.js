@@ -10,7 +10,7 @@ export async function POST(request) {
 
     if (url && key) {
       const supabase = createClient(url, key);
-      await supabase.from('nordicpep_orders').insert({
+      await supabase.from('scandipep_orders').insert({
         customer_name: shipping.name,
         customer_email: shipping.email,
         shipping_address: shipping.address,

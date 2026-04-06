@@ -8,8 +8,8 @@ export default function Footer() {
         <div className={styles.grid}>
           <div className={styles.brand}>
             <div className={styles.logo}>
-              <span className={styles.logoMark}>N</span>
-              <span className={styles.logoText}>NordicPep</span>
+              <span className={styles.logoMark}>SP</span>
+              <span className={styles.logoText}>ScandiPep</span>
             </div>
             <p className={styles.tagline}>
               Forskningspeptider av högsta kvalitet med skandinavisk precision.
@@ -35,7 +35,7 @@ export default function Footer() {
             <h4 className={styles.heading}>Information</h4>
             <Link href="/privacy" className={styles.link}>Integritetspolicy</Link>
             <Link href="/terms" className={styles.link}>Köpvillkor</Link>
-            <span className={styles.info}>contact@nordicpep.se</span>
+            <span className={styles.info}>contact@scandipep.se</span>
           </div>
         </div>
 
@@ -60,14 +60,14 @@ export default function Footer() {
         <div className={styles.disclaimer}>
           <p>
             Alla produkter säljs uteslutande för laboratorie- och forskningsändamål. Ej avsett för
-            mänsklig konsumtion. NordicPep uppmuntrar inte användning av produkter för andra ändamål
-            än legitim forskning. Genom att handla hos NordicPep bekräftar du att du är minst 18 år
+            mänsklig konsumtion. ScandiPep uppmuntrar inte användning av produkter för andra ändamål
+            än legitim forskning. Genom att handla hos ScandiPep bekräftar du att du är minst 18 år
             och att produkterna uteslutande kommer att användas i forskningssyfte.
           </p>
         </div>
 
         <div className={styles.bottom}>
-          <span>&copy; {new Date().getFullYear()} NordicPep. Alla rättigheter förbehållna.</span>
+          <span>&copy; {new Date().getFullYear()} ScandiPep. Alla rättigheter förbehållna.</span>
           <span className={styles.sep}>|</span>
           <span>Forskningskemikalier — ej för mänsklig konsumtion</span>
         </div>

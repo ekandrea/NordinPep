@@ -20,14 +20,14 @@ export default function ProductPage() {
     '@type': 'Product',
     name: product.name,
     description: product.description,
-    image: `https://nordicpep.se${product.image}`,
-    brand: { '@type': 'Brand', name: 'NordicPep' },
+    image: `https://scandipep.se${product.image}`,
+    brand: { '@type': 'Brand', name: 'ScandiPep' },
     offers: {
       '@type': 'Offer',
       price: product.price,
       priceCurrency: 'SEK',
       availability: 'https://schema.org/InStock',
-      seller: { '@type': 'Organization', name: 'NordicPep' },
+      seller: { '@type': 'Organization', name: 'ScandiPep' },
     },
   } : null;
 

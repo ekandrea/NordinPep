@@ -21,8 +21,8 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoMark}>N</span>
-          <span className={styles.logoText}>NordicPep</span>
+          <span className={styles.logoMark}>SP</span>
+          <span className={styles.logoText}>ScandiPep</span>
         </Link>
 
         <div className={`${styles.links} ${menuOpen ? styles.linksOpen : ''}`}>

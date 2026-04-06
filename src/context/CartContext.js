@@ -11,7 +11,7 @@ export function CartProvider({ children }) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem('nordicpep-cart');
+    const stored = localStorage.getItem('scandipep-cart');
     if (stored) {
       try {
         setItems(JSON.parse(stored));
@@ -22,7 +22,7 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     if (isLoaded) {
-      localStorage.setItem('nordicpep-cart', JSON.stringify(items));
+      localStorage.setItem('scandipep-cart', JSON.stringify(items));
     }
   }, [items, isLoaded]);
 

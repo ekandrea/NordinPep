@@ -12,16 +12,16 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 export const metadata = {
   title: {
-    default: 'NordicPep — Forskningspeptider | Skandinavisk Kvalitet',
-    template: '%s | NordicPep',
+    default: 'ScandiPep — Forskningspeptider | Skandinavisk Kvalitet',
+    template: '%s | ScandiPep',
   },
   description:
     'Premium forskningspeptider med ≥98% renhet. COA-verifierade, fri frakt över 500 kr, snabb leverans. Uteslutande för forskningsändamål.',
   keywords: ['peptider', 'forskningspeptider', 'BPC-157', 'Selank', 'GHK-Cu', 'köpa peptider', 'peptider Sverige'],
   openGraph: {
-    title: 'NordicPep — Forskningspeptider av Högsta Kvalitet',
+    title: 'ScandiPep — Forskningspeptider av Högsta Kvalitet',
     description: 'Premium forskningspeptider med skandinavisk precision. COA-verifierade, fri frakt, snabb leverans.',
-    siteName: 'NordicPep',
+    siteName: 'ScandiPep',
     locale: 'sv_SE',
     type: 'website',
   },
@@ -31,9 +31,9 @@ export const metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'NordicPep',
-  url: 'https://nordicpep.se',
-  logo: 'https://nordicpep.se/images/logo.png',
+  name: 'ScandiPep',
+  url: 'https://scandipep.se',
+  logo: 'https://scandipep.se/images/logo.png',
   description: 'Premium forskningspeptider med skandinavisk precision. COA-verifierade, snabb leverans inom EU.',
   address: {
     '@type': 'PostalAddress',
@@ -41,7 +41,7 @@ const jsonLd = {
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    email: 'contact@nordicpep.se',
+    email: 'contact@scandipep.se',
     contactType: 'customer service',
     availableLanguage: ['Swedish', 'English'],
   },

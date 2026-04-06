@@ -68,7 +68,7 @@ export default function Admin() {
                   </td>
                   <td>
                     <a
-                      href={`mailto:?subject=Prisförfrågan – NordicPep&body=Hej ${supplier.name},%0A%0AVi är intresserade av att diskutera peptidleveranser och prissättning.`}
+                      href={`mailto:?subject=Prisförfrågan – ScandiPep&body=Hej ${supplier.name},%0A%0AVi är intresserade av att diskutera peptidleveranser och prissättning.`}
                       className={styles.contactBtn}
                     >
                       Kontakta för pris

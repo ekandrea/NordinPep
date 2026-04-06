@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'Integritetspolicy',
-  description: 'NordicPeps integritetspolicy — hur vi hanterar dina personuppgifter i enlighet med GDPR.',
+  description: 'ScandiPeps integritetspolicy — hur vi hanterar dina personuppgifter i enlighet med GDPR.',
 };
 
 export default function Privacy() {
@@ -16,9 +16,9 @@ export default function Privacy() {
           <div className={styles.content}>
             <h2>1. Personuppgiftsansvarig</h2>
             <p>
-              NordicPep, org.nr [anges vid registrering], är personuppgiftsansvarig för
+              ScandiPep, org.nr [anges vid registrering], är personuppgiftsansvarig för
               behandlingen av dina personuppgifter. Du kan kontakta oss på
-              contact@nordicpep.se.
+              contact@scandipep.se.
             </p>
 
             <h2>2. Vilka uppgifter vi samlar in</h2>
@@ -66,7 +66,7 @@ export default function Privacy() {
               <li>Dataportabilitet — få dina uppgifter i maskinläsbart format</li>
               <li>Återkalla samtycke för nyhetsbrev när som helst</li>
             </ul>
-            <p>Kontakta oss på contact@nordicpep.se för att utöva dina rättigheter.</p>
+            <p>Kontakta oss på contact@scandipep.se för att utöva dina rättigheter.</p>
 
             <h2>7. Cookies</h2>
             <p>

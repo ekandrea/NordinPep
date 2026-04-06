@@ -34,7 +34,7 @@ export async function POST(request) {
       const supabase = getSupabase();
 
       if (supabase) {
-        await supabase.from('nordicpep_orders').insert({
+        await supabase.from('scandipep_orders').insert({
           stripe_session_id: session.id,
           customer_name: session.metadata?.customerName || '',
           customer_email: session.customer_email || '',

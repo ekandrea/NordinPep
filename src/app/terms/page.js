@@ -2,7 +2,7 @@ import styles from '../privacy/page.module.css';
 
 export const metadata = {
   title: 'Köpvillkor',
-  description: 'NordicPeps köpvillkor — villkor för köp av forskningspeptider.',
+  description: 'ScandiPeps köpvillkor — villkor för köp av forskningspeptider.',
 };
 
 export default function Terms() {
@@ -16,14 +16,14 @@ export default function Terms() {
           <div className={styles.content}>
             <h2>1. Allmänt</h2>
             <p>
-              Dessa köpvillkor gäller för alla köp gjorda via nordicpep.se. Genom att
-              genomföra ett köp godkänner du dessa villkor. NordicPep förbehåller sig
+              Dessa köpvillkor gäller för alla köp gjorda via scandipep.se. Genom att
+              genomföra ett köp godkänner du dessa villkor. ScandiPep förbehåller sig
               rätten att uppdatera villkoren. Aktuell version finns alltid på denna sida.
             </p>
 
             <h2>2. Produkter och användning</h2>
             <p>
-              Alla produkter på nordicpep.se säljs uteslutande för laboratorie- och
+              Alla produkter på scandipep.se säljs uteslutande för laboratorie- och
               forskningsändamål. Produkterna är inte avsedda för mänsklig konsumtion,
               terapeutisk användning eller diagnostik. Genom att genomföra ett köp
               bekräftar du att:
@@ -60,7 +60,7 @@ export default function Terms() {
               Enligt distansavtalslagen har du 14 dagars ångerrätt från det att du
               mottar varan. Ångerrätten gäller inte för varor som av hälso- eller
               hygienskäl inte kan returneras om förseglingen brutits. Kontakta oss på
-              contact@nordicpep.se för att påbörja en retur.
+              contact@scandipep.se för att påbörja en retur.
             </p>
 
             <h2>6. Reklamation</h2>
@@ -73,7 +73,7 @@ export default function Terms() {
 
             <h2>7. Ansvarsbegränsning</h2>
             <p>
-              NordicPep ansvarar inte för skador som uppstår genom felaktig användning
+              ScandiPep ansvarar inte för skador som uppstår genom felaktig användning
               av produkter, inklusive men inte begränsat till användning i strid med
               dessa villkor eller gällande lagstiftning. Vårt ansvar är begränsat till
               ordervärdet.
@@ -81,7 +81,7 @@ export default function Terms() {
 
             <h2>8. Force majeure</h2>
             <p>
-              NordicPep ansvarar inte för förseningar eller utebliven leverans som beror
+              ScandiPep ansvarar inte för förseningar eller utebliven leverans som beror
               på omständigheter utanför vår kontroll, såsom naturkatastrofer, krig,
               pandemi, strejk eller myndighetsbeslut.
             </p>

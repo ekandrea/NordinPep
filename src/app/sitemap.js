@@ -1,7 +1,7 @@
 import { products } from '@/data/products';
 import { blogPosts } from '@/data/blogPosts';
 
-const BASE_URL = 'https://nordicpep.se';
+const BASE_URL = 'https://scandipep.se';
 
 export default function sitemap() {
   const staticPages = [

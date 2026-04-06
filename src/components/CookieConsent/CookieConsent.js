@@ -7,12 +7,12 @@ export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('nordicpep-cookies');
+    const consent = localStorage.getItem('scandipep-cookies');
     if (!consent) setVisible(true);
   }, []);
 
   const accept = (level) => {
-    localStorage.setItem('nordicpep-cookies', level);
+    localStorage.setItem('scandipep-cookies', level);
     setVisible(false);
   };
 

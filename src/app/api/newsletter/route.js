@@ -19,7 +19,7 @@ export async function POST(request) {
     }
 
     const { error } = await supabase
-      .from('nordicpep_newsletter')
+      .from('scandipep_newsletter')
       .upsert({ email }, { onConflict: 'email' });
 
     if (error) {

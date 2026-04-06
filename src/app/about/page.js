@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'Om Oss',
-  description: 'Lär dig mer om NordicPep — skandinavisk precision möter forskningskvalitet.',
+  description: 'Lär dig mer om ScandiPep — skandinavisk precision möter forskningskvalitet.',
 };
 
 const values = [
@@ -29,10 +29,10 @@ export default function About() {
     <section className="section">
       <div className="container">
         <div className={styles.hero}>
-          <span className={styles.badge}>Om NordicPep</span>
+          <span className={styles.badge}>Om ScandiPep</span>
           <h1 className={styles.title}>Skandinavisk Precision Möter Forskningskvalitet</h1>
           <p className={styles.subtitle}>
-            NordicPep grundades med ett tydligt uppdrag: att förse den europeiska
+            ScandiPep grundades med ett tydligt uppdrag: att förse den europeiska
             forskargemenskapen med pålitligt rena, korrekt dokumenterade peptider — utan
             kompromisser. Vi tror att kvalitetsforskning börjar med kvalitetsmaterial, och
             varje produkt vi erbjuder speglar den övertygelsen.
@@ -53,7 +53,7 @@ export default function About() {
           <p className={styles.missionText}>
             Vi kompromissar inte med renhet, dokumentation eller förvaring. Varje batch
             testas oberoende. Varje leverans spåras. Varje kundkontakt hanteras med den
-            professionalism som seriös forskning kräver. NordicPep finns för att tjäna
+            professionalism som seriös forskning kräver. ScandiPep finns för att tjäna
             forskare som behöver material de kan lita på — varken mer eller mindre.
           </p>
         </div>
