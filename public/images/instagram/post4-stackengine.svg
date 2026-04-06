@@ -4,33 +4,27 @@
       <stop offset="0%" style="stop-color:#0a0e14"/>
       <stop offset="100%" style="stop-color:#0d1520"/>
     </linearGradient>
-    <linearGradient id="acc4" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="ac4" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#5bbfcf"/>
       <stop offset="100%" style="stop-color:#3a8e9d"/>
     </linearGradient>
   </defs>
   <rect width="1080" height="1080" fill="url(#bg4)"/>
-  <rect x="80" y="80" width="60" height="3" fill="url(#acc4)"/>
-  <!-- Title -->
-  <text x="540" y="180" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="24" fill="#5bbfcf" letter-spacing="6">GRATIS VERKTYG</text>
-  <text x="540" y="310" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="80" fill="#f0f0f5">Vet inte var</text>
-  <text x="540" y="400" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="80" fill="#f0f0f5">du ska börja?</text>
-  <!-- Subtitle -->
-  <text x="540" y="490" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="32" fill="#8a8a9a">Testa vår Stack Engine</text>
-  <!-- Steps -->
-  <rect x="160" y="560" width="760" height="80" rx="12" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
-  <text x="210" y="610" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">1.</text>
-  <text x="260" y="610" font-family="Helvetica Neue, Arial, sans-serif" font-weight="500" font-size="28" fill="#f0f0f5">Vilket forskningsområde intresserar dig?</text>
-  <rect x="160" y="660" width="760" height="80" rx="12" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
-  <text x="210" y="710" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">2.</text>
-  <text x="260" y="710" font-family="Helvetica Neue, Arial, sans-serif" font-weight="500" font-size="28" fill="#f0f0f5">Hur erfaren är du?</text>
-  <rect x="160" y="760" width="760" height="80" rx="12" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
-  <text x="210" y="810" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">3.</text>
-  <text x="260" y="810" font-family="Helvetica Neue, Arial, sans-serif" font-weight="500" font-size="28" fill="#f0f0f5">Vad är din budget?</text>
-  <!-- Result -->
-  <rect x="160" y="870" width="760" height="80" rx="12" fill="rgba(74,158,173,0.15)" stroke="rgba(74,158,173,0.3)" stroke-width="1"/>
-  <text x="540" y="920" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">→ Din personliga peptidstack</text>
+  <rect x="80" y="80" width="60" height="3" fill="url(#ac4)"/>
+  <!-- Hook -->
+  <text x="540" y="200" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#5bbfcf" letter-spacing="4">QUIZ</text>
+  <text x="540" y="330" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="68" fill="#f0f0f5">Vilken peptid</text>
+  <text x="540" y="420" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="68" fill="#f0f0f5">passar ditt</text>
+  <text x="540" y="510" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="68" fill="url(#ac4)">forskningsområde?</text>
+  <!-- Description -->
+  <text x="540" y="610" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="32" fill="#8a8a9a">3 frågor. 30 sekunder.</text>
+  <text x="540" y="660" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="32" fill="#8a8a9a">Personlig rekommendation.</text>
+  <!-- CTA -->
+  <rect x="290" y="730" width="500" height="70" rx="35" fill="url(#ac4)"/>
+  <text x="540" y="776" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#fff">Testa nu — länk i bio</text>
+  <!-- Arrows -->
+  <text x="540" y="880" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" fill="#5bbfcf">↓ ↓ ↓</text>
   <!-- Footer -->
-  <rect x="0" y="960" width="1080" height="120" fill="#0d1520"/>
-  <text x="540" y="1030" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#5bbfcf">scandipep.se/stack-engine</text>
+  <rect x="0" y="970" width="1080" height="110" fill="#0d1520"/>
+  <text x="540" y="1040" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="30" fill="#5bbfcf">scandipep.se/stack-engine</text>
 </svg>

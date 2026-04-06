@@ -4,35 +4,35 @@
       <stop offset="0%" style="stop-color:#0a0e14"/>
       <stop offset="100%" style="stop-color:#0d1520"/>
     </linearGradient>
-    <linearGradient id="acc3" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="ac3" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#5bbfcf"/>
       <stop offset="100%" style="stop-color:#3a8e9d"/>
     </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cf5b5b"/>
+      <stop offset="100%" style="stop-color:#9d3a3a"/>
+    </linearGradient>
   </defs>
   <rect width="1080" height="1080" fill="url(#bg3)"/>
-  <rect x="80" y="80" width="60" height="3" fill="url(#acc3)"/>
-  <!-- Title -->
-  <text x="540" y="200" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="24" fill="#5bbfcf" letter-spacing="6">VARFÖR SCANDIPEP</text>
-  <text x="540" y="320" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="64" fill="#f0f0f5">Vad du får</text>
-  <text x="540" y="400" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="64" fill="#f0f0f5">hos oss</text>
-  <!-- Cards -->
-  <rect x="100" y="480" width="400" height="120" rx="16" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
-  <text x="140" y="535" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">✓</text>
-  <text x="180" y="535" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#f0f0f5">Fri frakt över 500 kr</text>
-  <text x="180" y="575" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="22" fill="#8a8a9a">Inom hela Sverige</text>
-  <rect x="580" y="480" width="400" height="120" rx="16" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
-  <text x="620" y="535" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">✓</text>
-  <text x="660" y="535" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#f0f0f5">Analysbevis (COA)</text>
-  <text x="660" y="575" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="22" fill="#8a8a9a">På varje produkt</text>
-  <rect x="100" y="640" width="400" height="120" rx="16" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
-  <text x="140" y="695" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">✓</text>
-  <text x="180" y="695" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#f0f0f5">≥98% renhet</text>
-  <text x="180" y="735" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="22" fill="#8a8a9a">HPLC-verifierad</text>
-  <rect x="580" y="640" width="400" height="120" rx="16" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
-  <text x="620" y="695" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="28" fill="#5bbfcf">✓</text>
-  <text x="660" y="695" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#f0f0f5">Leverans 2-4 dagar</text>
-  <text x="660" y="735" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="22" fill="#8a8a9a">Skickas från Sverige</text>
+  <rect x="80" y="80" width="60" height="3" fill="url(#ac3)"/>
+  <!-- Hook -->
+  <text x="540" y="220" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="56" fill="#f0f0f5">3 saker du MÅSTE</text>
+  <text x="540" y="300" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="56" fill="#f0f0f5">kolla innan du köper</text>
+  <text x="540" y="380" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="56" fill="url(#ac3)">peptider online</text>
+  <!-- Items -->
+  <rect x="120" y="450" width="840" height="130" rx="16" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
+  <text x="180" y="510" font-family="Arial Black, sans-serif" font-weight="900" font-size="48" fill="url(#red)">1</text>
+  <text x="240" y="500" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="30" fill="#f0f0f5">Finns det analysbevis (COA)?</text>
+  <text x="240" y="545" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="24" fill="#8a8a9a">Utan COA vet du inte vad du får.</text>
+  <rect x="120" y="600" width="840" height="130" rx="16" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
+  <text x="180" y="660" font-family="Arial Black, sans-serif" font-weight="900" font-size="48" fill="url(#red)">2</text>
+  <text x="240" y="650" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="30" fill="#f0f0f5">Är renheten ≥98%?</text>
+  <text x="240" y="695" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="24" fill="#8a8a9a">Lägre renhet = föroreningar i produkten.</text>
+  <rect x="120" y="750" width="840" height="130" rx="16" fill="#1a1a25" stroke="#2a3a4a" stroke-width="1"/>
+  <text x="180" y="810" font-family="Arial Black, sans-serif" font-weight="900" font-size="48" fill="url(#red)">3</text>
+  <text x="240" y="800" font-family="Helvetica Neue, Arial, sans-serif" font-weight="700" font-size="30" fill="#f0f0f5">Tredjepartstest eller eget test?</text>
+  <text x="240" y="845" font-family="Helvetica Neue, Arial, sans-serif" font-weight="400" font-size="24" fill="#8a8a9a">Oberoende labb = ingen intressekonflikt.</text>
   <!-- Footer -->
-  <rect x="0" y="960" width="1080" height="120" fill="#0d1520"/>
-  <text x="540" y="1030" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="28" fill="#5bbfcf">scandipep.se</text>
+  <rect x="0" y="970" width="1080" height="110" fill="#0d1520"/>
+  <text x="540" y="1040" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-weight="600" font-size="30" fill="#5bbfcf">Vi klarar alla tre. scandipep.se</text>
 </svg>

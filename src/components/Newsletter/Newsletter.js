@@ -29,18 +29,18 @@ export default function Newsletter() {
   };
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="notify">
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.text}>
-            <h3 className={styles.title}>10% rabatt på din första beställning</h3>
+            <h3 className={styles.title}>Bli först med att veta när vi lanserar</h3>
             <p className={styles.desc}>
-              Prenumerera och få en rabattkod direkt. Plus nyheter om nya produkter
-              och forskningsartiklar.
+              Registrera din e-post och få 10% rabatt på din första beställning
+              + förtur vid lansering.
             </p>
           </div>
           {status === 'success' ? (
-            <p className={styles.success}>Tack! Din rabattkod: <strong>NORDIC10</strong> (10% rabatt)</p>
+            <p className={styles.success}>Tack! Du är med på listan. Du får 10% rabatt vid lansering.</p>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
               <input

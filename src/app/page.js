@@ -22,22 +22,22 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroGlow} />
         <div className={`container ${styles.heroInner}`}>
-          <span className={styles.badge}>Forskningspeptider</span>
+          <span className={styles.badge}>Lansering snart</span>
           <h1 className={styles.title}>
-            Premium Peptider
+            Forskningspeptider
             <br />
-            <span className={styles.accent}>Från Skandinavien</span>
+            <span className={styles.accent}>Äntligen i Sverige</span>
           </h1>
           <p className={styles.subtitle}>
-            Labbtestade peptider med minst 98% renhet. Snabb leverans
-            i hela Sverige. Analysbevis på varje produkt.
+            Labbtestade peptider med minst 98% renhet. Analysbevis på varje produkt.
+            Snabb leverans i hela Sverige. Registrera dig för att få veta först.
           </p>
           <div className={styles.ctas}>
-            <Link href="/shop" className="btn btn-primary">
-              Se produkter
-            </Link>
-            <Link href="/stack-engine" className="btn btn-secondary">
-              Hitta rätt peptider
+            <a href="#notify" className="btn btn-primary">
+              Meddela mig vid lansering
+            </a>
+            <Link href="/shop" className="btn btn-secondary">
+              Se kommande produkter
             </Link>
           </div>
         </div>
