@@ -43,9 +43,8 @@ export default function Footer() {
           <div className={styles.badgeGroup}>
             <span className={styles.badgeLabel}>Säker betalning</span>
             <div className={styles.payIcons}>
-              <span className={styles.payIcon}>VISA</span>
-              <span className={styles.payIcon}>MC</span>
-              <span className={styles.payIcon}>Stripe</span>
+              <span className={styles.payIcon}>Swish</span>
+              <span className={styles.payIcon}>Bank</span>
             </div>
           </div>
           <div className={styles.badgeGroup}>

@@ -17,12 +17,12 @@ export const faqs = [
   {
     question: 'Hur förvarar jag peptider?',
     answer:
-      'Oöppnade peptider i pulverform: frys (-20°C). Uppblandade peptider: kyl (2-8°C) och använd inom 2-4 veckor. Bakteriostatiskt vatten: rumstemperatur. Kolla alltid produktsidan för exakta instruktioner.',
+      'Oöppnade peptider i pulverform: frys (-20°C). Rekonstituerade peptider: förvara i kyl (2-8°C) och använd i dina experiment inom 2-4 veckor. Bakteriostatiskt vatten: rumstemperatur. Kolla alltid produktsidan för exakta instruktioner.',
   },
   {
     question: 'Vad är bakteriostatiskt vatten?',
     answer:
-      'Sterilt vatten med konserveringsmedel (bensylalkohol). Du behöver det för att blanda dina peptider från pulver till vätska. Det håller längre än vanligt sterilt vatten. Vi säljer det under Tillbehör.',
+      'Sterilt vatten med konserveringsmedel (bensylalkohol) som används för att rekonstituera lyofiliserade peptider från pulverform till lösning. Håller längre än vanligt sterilt vatten tack vare konserveringsmedlet. Finns under Tillbehör.',
   },
   {
     question: 'Vad är ett analysbevis (COA)?',

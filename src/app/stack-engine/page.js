@@ -55,20 +55,20 @@ export default function StackEngine() {
   };
 
   const interestDescriptions = {
-    'Återhämtning & Skador': 'Snabbare tillbaka efter träning, skador eller operation',
-    'Fokus & Stress': 'Bättre koncentration, mindre stress, skarpare hjärna',
-    'Hud & Anti-Aging': 'Yngre hud, mer kollagen, bromsa åldrandet',
-    'Mage & Inflammation': 'Tarmhälsa, mindre inflammation, bättre immunförsvar',
+    'Återhämtning & Skador': 'Forskning på återhämtningsmekanismer och vävnadsreparation',
+    'Fokus & Stress': 'Forskning på kognition, stressmekanismer och neurofunktion',
+    'Hud & Anti-Aging': 'Forskning på kollagensyntes, hudbiologi och åldrandeprocesser',
+    'Mage & Inflammation': 'Forskning på gastrointestinal funktion och immunmekanismer',
   };
 
   return (
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.badge}>Hitta rätt peptider för dig</span>
+          <span className={styles.badge}>Hitta rätt peptider för din forskning</span>
           <h1 className={styles.title}>Stack Engine</h1>
           <p className={styles.subtitle}>
-            Svara på 3 snabba frågor — vi rekommenderar exakt vilka peptider du behöver.
+            Svara på 3 snabba frågor — vi rekommenderar peptider baserat på ditt forskningsintresse.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function StackEngine() {
           {/* Steg 1 */}
           {step === 0 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Vad vill du uppnå?</h2>
+              <h2 className={styles.question}>Vilket forskningsområde intresserar dig?</h2>
               <div className={styles.options}>
                 {researchInterests.map((ri) => (
                   <button

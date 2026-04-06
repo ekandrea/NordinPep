@@ -38,9 +38,8 @@ export default function Terms() {
             <h2>3. Priser och betalning</h2>
             <p>
               Alla priser anges i svenska kronor (SEK) inklusive moms om inte annat
-              anges. Betalning sker via Stripe och vi accepterar Visa, Mastercard och
-              andra vanliga betalningsmetoder. Betalningen genomförs vid bekräftelse av
-              ordern.
+              anges. Betalning sker via Swish eller banköverföring. Vi skickar din
+              beställning så fort betalningen är bekräftad.
             </p>
 
             <h2>4. Frakt och leverans</h2>

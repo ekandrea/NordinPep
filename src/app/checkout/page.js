@@ -5,11 +5,12 @@ import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import styles from './page.module.css';
 
-const EU_COUNTRIES = [
-  'Sverige', 'Tyskland', 'Frankrike', 'Nederländerna', 'Belgien', 'Danmark', 'Finland',
-  'Norge', 'Österrike', 'Italien', 'Spanien', 'Portugal', 'Irland', 'Polen', 'Tjeckien',
-  'Rumänien', 'Ungern', 'Grekland', 'Bulgarien', 'Kroatien', 'Slovakien', 'Litauen',
-  'Slovenien', 'Lettland', 'Estland', 'Luxemburg', 'Malta', 'Cypern', 'Storbritannien',
+const SHIPPING_COUNTRIES = [
+  'Sverige', 'Danmark', 'Finland', 'Norge', 'Tyskland', 'Nederländerna', 'Belgien',
+  'Frankrike', 'Österrike', 'Italien', 'Spanien', 'Portugal', 'Irland', 'Polen',
+  'Tjeckien', 'Rumänien', 'Ungern', 'Grekland', 'Bulgarien', 'Kroatien', 'Slovakien',
+  'Litauen', 'Slovenien', 'Lettland', 'Estland', 'Luxemburg', 'Malta', 'Cypern',
+  'Storbritannien',
 ];
 
 export default function Checkout() {
@@ -103,7 +104,7 @@ export default function Checkout() {
               <div className={styles.field}>
                 <label htmlFor="country">Land</label>
                 <select id="country" name="country" value={form.country} onChange={handleChange}>
-                  {EU_COUNTRIES.map((c) => (
+                  {SHIPPING_COUNTRIES.map((c) => (
                     <option key={c} value={c}>{c}</option>
                   ))}
                 </select>

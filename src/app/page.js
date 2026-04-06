@@ -83,14 +83,14 @@ export default function Home() {
           <div className={styles.stackCard}>
             <div className={styles.stackContent}>
               <span className={styles.stackBadge}>Vet inte var du ska börja?</span>
-              <h2 className={styles.stackTitle}>Hitta din peptid-stack</h2>
+              <h2 className={styles.stackTitle}>Hitta rätt peptider</h2>
               <p className={styles.stackDesc}>
-                Svara på 3 snabba frågor om vad du vill uppnå, din erfarenhet och budget.
-                Vi föreslår exakt vilka produkter som passar dig — sen lägger du allt
+                Svara på 3 snabba frågor om ditt forskningsintresse, erfarenhet och budget.
+                Vi föreslår en skräddarsydd peptidstack — sen lägger du allt
                 i varukorgen med ett klick.
               </p>
               <Link href="/stack-engine" className="btn btn-primary">
-                Starta quizet
+                Starta testet
               </Link>
             </div>
             <div className={styles.stackVisual}>
@@ -111,8 +111,8 @@ export default function Home() {
           </h2>
           <div className={styles.reviewGrid}>
             {[
-              { name: 'Marcus L.', role: 'Stockholm', text: 'Snabb leverans och riktigt bra kvalitet. Har testat BPC-157 och märker tydlig skillnad i min återhämtning efter träning.' },
-              { name: 'Emma K.', role: 'Göteborg', text: 'Stack Engine-verktyget gjorde det superenkelt att välja rätt. Beställde GHK-Cu för hudforskning — nöjd!' },
+              { name: 'Marcus L.', role: 'Stockholm', text: 'Snabb leverans och riktigt bra kvalitet. Analysbeviset som följde med BPC-157 var imponerande — precis vad man behöver för seriös forskning.' },
+              { name: 'Emma K.', role: 'Göteborg', text: 'Stack Engine-verktyget gjorde det superenkelt att hitta rätt produkter för mitt forskningsområde. Snabb leverans och bra COA.' },
               { name: 'Johan A.', role: 'Malmö', text: 'Äntligen en svensk sida med ordentlig kvalitetskontroll. Diskret förpackning och analysbevis på allt. Rekommenderar.' },
             ].map((review, i) => (
               <div key={i} className={styles.reviewCard}>
@@ -136,9 +136,9 @@ export default function Home() {
           <div className={styles.introInner}>
             <h2 className={styles.introTitle}>Varför NordicPep?</h2>
             <p className={styles.introText}>
-              Vi säljer bara peptider vi själva skulle använda. Varje batch testas av
-              ett oberoende labb och levereras med analysbevis. Inga mellanhänder,
-              inga kompromisser — bara ren kvalitet direkt från Europa till din dörr.
+              Vi säljer bara peptider som uppfyller våra egna kvalitetskrav. Varje batch
+              testas av ett oberoende labb och levereras med analysbevis. Inga mellanhänder,
+              inga kompromisser — bara verifierad kvalitet direkt från Europa.
             </p>
           </div>
         </div>
