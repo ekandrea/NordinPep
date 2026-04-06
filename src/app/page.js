@@ -9,7 +9,7 @@ import styles from './page.module.css';
 const trustBadges = [
   { icon: '◎', title: 'Labbtestad', desc: 'Tredjepartsverifierad renhet' },
   { icon: '◆', title: 'Fri Frakt', desc: 'Över 500 kr i Sverige' },
-  { icon: '▣', title: 'Diskret Leverans', desc: 'Omärkta paket' },
+  { icon: '▣', title: 'Snabb Leverans', desc: '2-4 dagar i Sverige' },
   { icon: '⬡', title: '≥98% Renhet', desc: 'Varje batch testad' },
 ];
 
@@ -29,7 +29,7 @@ export default function Home() {
             <span className={styles.accent}>Från Skandinavien</span>
           </h1>
           <p className={styles.subtitle}>
-            Labbtestade peptider med minst 98% renhet. Snabb och diskret leverans
+            Labbtestade peptider med minst 98% renhet. Snabb leverans
             i hela Sverige. Analysbevis på varje produkt.
           </p>
           <div className={styles.ctas}>
@@ -94,7 +94,7 @@ export default function Home() {
               </Link>
             </div>
             <div className={styles.stackVisual}>
-              <div className={styles.stackStep}>1. Vad vill du uppnå?</div>
+              <div className={styles.stackStep}>1. Vilket forskningsområde?</div>
               <div className={styles.stackStep}>2. Hur erfaren är du?</div>
               <div className={styles.stackStep}>3. Vad är din budget?</div>
               <div className={styles.stackResult}>→ Din personliga stack</div>
@@ -113,7 +113,7 @@ export default function Home() {
             {[
               { name: 'Marcus L.', role: 'Stockholm', text: 'Snabb leverans och riktigt bra kvalitet. Analysbeviset som följde med BPC-157 var imponerande — precis vad man behöver för seriös forskning.' },
               { name: 'Emma K.', role: 'Göteborg', text: 'Stack Engine-verktyget gjorde det superenkelt att hitta rätt produkter för mitt forskningsområde. Snabb leverans och bra COA.' },
-              { name: 'Johan A.', role: 'Malmö', text: 'Äntligen en svensk sida med ordentlig kvalitetskontroll. Diskret förpackning och analysbevis på allt. Rekommenderar.' },
+              { name: 'Johan A.', role: 'Malmö', text: 'Äntligen en svensk sida med ordentlig kvalitetskontroll. Snabb leverans och analysbevis på allt. Rekommenderar.' },
             ].map((review, i) => (
               <div key={i} className={styles.reviewCard}>
                 <p className={styles.reviewText}>&ldquo;{review.text}&rdquo;</p>

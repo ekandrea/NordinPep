@@ -19,7 +19,7 @@ const values = [
     desc: 'Peptider förvaras under strikta temperaturkontrollerade förhållanden från mottagning till utskick, vilket säkerställer förvaringens integritet.',
   },
   {
-    title: 'Diskret Leverans',
+    title: 'Snabb Leverans',
     desc: 'Alla beställningar skickas i omärkta, temperaturanpassade förpackningar med fullständig spårning inom hela Sverige och EU.',
   },
 ];

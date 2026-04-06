@@ -26,7 +26,7 @@ export default function Privacy() {
             <ul>
               <li>Namn och kontaktuppgifter (e-post, adress, telefonnummer)</li>
               <li>Leveransadress och faktureringsuppgifter</li>
-              <li>Betalningsinformation (hanteras av Stripe — vi lagrar aldrig kortuppgifter)</li>
+              <li>Betalningsinformation (Swish-nummer eller bankuppgifter — vi lagrar aldrig känsliga uppgifter)</li>
               <li>Orderhistorik och kundnummer</li>
               <li>Teknisk data vid besök (IP-adress, webbläsartyp, cookies)</li>
             </ul>
@@ -43,7 +43,6 @@ export default function Privacy() {
             <h2>4. Delning med tredje part</h2>
             <p>Vi delar personuppgifter med:</p>
             <ul>
-              <li><strong>Stripe:</strong> Betalningshantering (PCI DSS-certifierad).</li>
               <li><strong>Fraktleverantörer:</strong> Namn och leveransadress för paketleverans.</li>
               <li><strong>Supabase:</strong> Databaslagring (EU-baserad serverinfrastruktur).</li>
             </ul>
@@ -80,7 +79,7 @@ export default function Privacy() {
             <p>
               Vi vidtar tekniska och organisatoriska åtgärder för att skydda dina
               personuppgifter, inklusive HTTPS-kryptering, säker betalningshantering via
-              Stripe och begränsad åtkomst till kunddata.
+              Swish och banköverföring, samt begränsad åtkomst till kunddata.
             </p>
 
             <h2>9. Tillsynsmyndighet</h2>

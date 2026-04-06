@@ -141,8 +141,8 @@ export const products = [
   {
     id: 'nasal-spray-kit',
     slug: 'nasal-spray-kit',
-    name: 'Nasal Spray Kit',
-    subtitle: 'Forskningsapplikation',
+    name: 'Sprayflask-kit',
+    subtitle: 'Laboratorieutrustning',
     price: 149,
     category: 'Tillbehör',
     popular: false,
@@ -153,7 +153,7 @@ export const products = [
       storage: 'Rumstemperatur',
     },
     description:
-      'Tre graduerade sprayflaskor för nasala forskningsprotokoll. Inkluderar dokumentationsmallar.',
+      'Tre graduerade sprayflaskor avsedda som laboratorieutrustning för lösningshantering. Inkluderar dokumentationsmallar.',
     research: null,
     image: '/images/nasal-kit.svg',
   },

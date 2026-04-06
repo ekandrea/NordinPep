@@ -15,11 +15,11 @@ export const metadata = {
     template: '%s | NordicPep',
   },
   description:
-    'Premium forskningspeptider med ≥98% renhet. COA-verifierade, fri frakt över 500 kr, diskret leverans. Uteslutande för forskningsändamål.',
+    'Premium forskningspeptider med ≥98% renhet. COA-verifierade, fri frakt över 500 kr, snabb leverans. Uteslutande för forskningsändamål.',
   keywords: ['peptider', 'forskningspeptider', 'BPC-157', 'Selank', 'GHK-Cu', 'köpa peptider', 'peptider Sverige'],
   openGraph: {
     title: 'NordicPep — Forskningspeptider av Högsta Kvalitet',
-    description: 'Premium forskningspeptider med skandinavisk precision. COA-verifierade, fri frakt, diskret leverans.',
+    description: 'Premium forskningspeptider med skandinavisk precision. COA-verifierade, fri frakt, snabb leverans.',
     siteName: 'NordicPep',
     locale: 'sv_SE',
     type: 'website',
@@ -33,7 +33,7 @@ const jsonLd = {
   name: 'NordicPep',
   url: 'https://nordicpep.se',
   logo: 'https://nordicpep.se/images/logo.png',
-  description: 'Premium forskningspeptider med skandinavisk precision. COA-verifierade, diskret leverans inom EU.',
+  description: 'Premium forskningspeptider med skandinavisk precision. COA-verifierade, snabb leverans inom EU.',
   address: {
     '@type': 'PostalAddress',
     addressCountry: 'SE',
