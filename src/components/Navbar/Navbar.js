@@ -12,9 +12,9 @@ export default function Navbar() {
   const navLinks = [
     { href: '/shop', label: 'Produkter' },
     { href: '/stack-engine', label: 'Stack Engine' },
+    { href: '/verktyg/kalkylator', label: 'Kalkylator' },
     { href: '/blog', label: 'Forskning' },
-    { href: '/faq', label: 'Vanliga frågor' },
-    { href: '/about', label: 'Om oss' },
+    { href: '/faq', label: 'FAQ' },
   ];
 
   return (

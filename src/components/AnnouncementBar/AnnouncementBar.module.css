@@ -1,0 +1,46 @@
+.bar {
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.text {
+  letter-spacing: 0.02em;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  padding: 0 4px;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .text {
+    font-size: 0.72rem;
+  }
+}

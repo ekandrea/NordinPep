@@ -33,14 +33,14 @@ export default function Newsletter() {
       <div className="container">
         <div className={styles.inner}>
           <div className={styles.text}>
-            <h3 className={styles.title}>Håll dig uppdaterad</h3>
+            <h3 className={styles.title}>10% rabatt på din första beställning</h3>
             <p className={styles.desc}>
-              Få nyheter om nya produkter, forskningsartiklar och exklusiva erbjudanden
-              direkt i din inkorg.
+              Prenumerera och få en rabattkod direkt. Plus nyheter om nya produkter
+              och forskningsartiklar.
             </p>
           </div>
           {status === 'success' ? (
-            <p className={styles.success}>Tack! Du är nu registrerad.</p>
+            <p className={styles.success}>Tack! Din rabattkod: <strong>NORDIC10</strong> (10% rabatt)</p>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
               <input

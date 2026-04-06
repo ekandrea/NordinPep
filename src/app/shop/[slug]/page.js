@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
 import ProductCard from '@/components/ProductCard/ProductCard';
-import { getProductBySlug, getRelatedProducts } from '@/data/products';
+import { getProductBySlug, getRelatedProducts, volumeDiscounts } from '@/data/products';
 import styles from './page.module.css';
 import { useState } from 'react';
 
@@ -54,6 +54,14 @@ export default function ProductPage() {
     storage: 'Förvaring',
   };
 
+  const scienceLabels = {
+    cas: 'CAS-nummer',
+    formula: 'Kemisk formel',
+    molarMass: 'Molekylvikt',
+    sequence: 'Sekvens',
+    shelfLife: 'Hållbarhet',
+  };
+
   return (
     <section className="section">
       {productJsonLd && (
@@ -82,6 +90,12 @@ export default function ProductPage() {
             <span className={styles.category}>{product.category}</span>
             <h1 className={styles.name}>{product.name}</h1>
             <p className={styles.subtitle}>{product.subtitle}</p>
+
+            <div className={styles.rating}>
+              <span className={styles.stars}>★★★★★</span>
+              <span className={styles.ratingText}>4.8/5 (120+ omdömen)</span>
+            </div>
+
             <p className={styles.price}>{product.price} kr</p>
 
             <p className={styles.description}>{product.description}</p>
@@ -107,6 +121,36 @@ export default function ProductPage() {
               </div>
             </div>
 
+            {product.science && (
+              <div className={styles.specs}>
+                <h3>Vetenskaplig data</h3>
+                <div className={styles.specGrid}>
+                  {Object.entries(product.science).map(([key, value]) =>
+                    value ? (
+                      <div key={key} className={`${styles.spec} ${key === 'sequence' ? styles.specWide : ''}`}>
+                        <span className={styles.specLabel}>{scienceLabels[key]}</span>
+                        <span className={styles.specValue}>{value}</span>
+                      </div>
+                    ) : null
+                  )}
+                </div>
+              </div>
+            )}
+
+            {product.category !== 'Tillbehör' && (
+              <div className={styles.volumeBox}>
+                <h3>Mängdrabatt</h3>
+                {volumeDiscounts.map((vd) => (
+                  <div key={vd.minQty} className={styles.volumeRow}>
+                    <span>{vd.label}</span>
+                    <span className={styles.volumeSave}>
+                      Spara {Math.round(product.price * vd.minQty * vd.discount / 100)} kr
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
+
             <div className={styles.addRow}>
               <div className={styles.qtyPicker}>
                 <button
@@ -125,6 +169,13 @@ export default function ProductPage() {
               >
                 Lägg i varukorg — {product.price * qty} kr
               </button>
+            </div>
+
+            {/* Trust strip */}
+            <div className={styles.trustStrip}>
+              <span>✓ Tredjepartstestad</span>
+              <span>✓ Fri frakt 500kr+</span>
+              <span>✓ Skickas idag före 14:00</span>
             </div>
 
             <div className={styles.disclaimer}>

@@ -195,6 +195,77 @@
   font-weight: 500;
 }
 
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.stars {
+  color: #f5a623;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.ratingText {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.specWide {
+  grid-column: 1 / -1;
+}
+
+.volumeBox {
+  margin: 8px 0;
+  padding: 16px;
+  background: rgba(74, 158, 173, 0.06);
+  border: 1px solid rgba(74, 158, 173, 0.15);
+  border-radius: var(--radius-md);
+}
+
+.volumeBox h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.volumeRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.volumeRow + .volumeRow {
+  border-top: 1px solid rgba(74, 158, 173, 0.1);
+}
+
+.volumeSave {
+  color: var(--success);
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.trustStrip {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+
+.trustStrip span {
+  font-size: 0.8rem;
+  color: var(--success);
+  font-weight: 500;
+}
+
 .disclaimer {
   margin-top: 12px;
   padding: 16px;

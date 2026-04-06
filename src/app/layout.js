@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import CartDrawer from '@/components/CartDrawer/CartDrawer';
 import CookieConsent from '@/components/CookieConsent/CookieConsent';
+import AnnouncementBar from '@/components/AnnouncementBar/AnnouncementBar';
 import Script from 'next/script';
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -70,8 +71,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <CartProvider>
+          <AnnouncementBar />
           <Navbar />
-          <main style={{ paddingTop: 'var(--nav-height)' }}>{children}</main>
+          <main style={{ paddingTop: 'calc(var(--nav-height) + 36px)' }}>{children}</main>
           <Footer />
           <CartDrawer />
           <CookieConsent />

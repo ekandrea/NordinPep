@@ -13,6 +13,13 @@ export const products = [
       form: 'Frystorkat pulver',
       storage: '-20°C',
     },
+    science: {
+      cas: '137525-51-0',
+      formula: 'C62H98N16O22',
+      molarMass: '1419.53 g/mol',
+      sequence: 'Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val',
+      shelfLife: '36 månader (oöppnad)',
+    },
     description:
       'En av de mest populära forskningspeptiderna. Över 100 publicerade studier i prekliniska modeller. Fokusområde: återhämtningsmekanismer och tarmfunktion.',
     research:
@@ -32,6 +39,13 @@ export const products = [
       quantity: '5mg',
       form: 'Frystorkat pulver',
       storage: '-20°C',
+    },
+    science: {
+      cas: '129954-34-3',
+      formula: 'C33H57N11O9',
+      molarMass: '751.87 g/mol',
+      sequence: 'Thr-Lys-Pro-Arg-Pro-Gly-Pro',
+      shelfLife: '36 månader (oöppnad)',
     },
     description:
       'Baserad på tuftsin, en naturlig immunpeptid. Studerad i prekliniska modeller för stressrelaterade mekanismer och kognitiv funktion. Populär inom nootropisk forskning.',
@@ -53,6 +67,13 @@ export const products = [
       form: 'Frystorkat pulver',
       storage: '-20°C',
     },
+    science: {
+      cas: '80714-61-0',
+      formula: 'C37H51N9O10S',
+      molarMass: '813.92 g/mol',
+      sequence: 'Met-Glu-His-Phe-Pro-Gly-Pro',
+      shelfLife: '36 månader (oöppnad)',
+    },
     description:
       'Härledd från ACTH-fragmentet, ett naturligt hormon. Studerad för minne och kognitiv funktion i djurmodeller. Undersöks ofta i kombination med Selank i forskningslitteraturen.',
     research:
@@ -72,6 +93,13 @@ export const products = [
       quantity: '50mg',
       form: 'Frystorkat pulver',
       storage: '2-8°C',
+    },
+    science: {
+      cas: '49557-75-7',
+      formula: 'C14H23CuN6O4',
+      molarMass: '403.92 g/mol',
+      sequence: 'Gly-His-Lys:Cu²⁺',
+      shelfLife: '24 månader (oöppnad)',
     },
     description:
       'En naturligt förekommande kopparpeptid vars koncentration minskar med åldern. Forskad för kollagensyntes, hudbiologi och antioxidativa mekanismer.',
@@ -93,6 +121,13 @@ export const products = [
       form: 'Frystorkat pulver',
       storage: '-20°C',
     },
+    science: {
+      cas: '307297-39-8',
+      formula: 'C14H22N4O9',
+      molarMass: '390.35 g/mol',
+      sequence: 'Ala-Glu-Asp-Gly',
+      shelfLife: '36 månader (oöppnad)',
+    },
     description:
       'Undersökt i prekliniska studier för åldrandeprocesser och telomerasaktivitet. Forskad i samband med melatoninreglering i djurmodeller.',
     research:
@@ -112,6 +147,13 @@ export const products = [
       quantity: '5mg',
       form: 'Frystorkat pulver',
       storage: '-20°C',
+    },
+    science: {
+      cas: '67727-97-3',
+      formula: 'C16H30N4O4',
+      molarMass: '342.43 g/mol',
+      sequence: 'Lys-Pro-Val',
+      shelfLife: '36 månader (oöppnad)',
     },
     description:
       'En tripeptid studerad i prekliniska inflammationsmodeller, med fokus på gastrointestinal funktion och immunmekanismer.',
@@ -133,6 +175,7 @@ export const products = [
       form: 'Vätska',
       storage: 'Rumstemperatur',
     },
+    science: null,
     description:
       'Sterilt vatten med konserveringsmedel för rekonstituering av frystorkade peptider. Nödvändigt tillbehör för alla peptider i pulverform.',
     research: null,
@@ -152,6 +195,7 @@ export const products = [
       form: 'Sprayflaskor',
       storage: 'Rumstemperatur',
     },
+    science: null,
     description:
       'Tre graduerade sprayflaskor avsedda som laboratorieutrustning för lösningshantering. Inkluderar dokumentationsmallar.',
     research: null,
@@ -160,6 +204,11 @@ export const products = [
 ];
 
 export const categories = ['Alla', 'Återhämtning', 'Fokus', 'Anti-Aging', 'Tillbehör'];
+
+export const volumeDiscounts = [
+  { minQty: 3, discount: 5, label: '3+ st = 5% rabatt' },
+  { minQty: 5, discount: 10, label: '5+ st = 10% rabatt' },
+];
 
 export function getProductBySlug(slug) {
   return products.find((p) => p.slug === slug);
