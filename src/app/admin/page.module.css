@@ -28,92 +28,41 @@
   font-size: 0.95rem;
 }
 
-.tableWrap {
-  overflow-x: auto;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
-.table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.table th {
-  text-align: left;
-  padding: 12px 16px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-muted);
-  border-bottom: 1px solid var(--border);
-}
-
-.table td {
-  padding: 16px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: middle;
-}
-
-.name {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
-.region {
-  padding: 4px 10px;
+.card {
+  padding: 28px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
-.link {
-  color: var(--accent);
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: color var(--transition);
-}
-
-.link:hover {
-  color: var(--accent-hover);
-}
-
-.input {
-  width: 100%;
-  min-width: 200px;
-  padding: 8px 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  font-size: 0.9rem;
-  transition: border-color var(--transition);
-}
-
-.input:focus {
-  outline: none;
-  border-color: var(--accent);
-}
-
-.input::placeholder {
-  color: var(--text-muted);
-}
-
-.contactBtn {
-  display: inline-block;
-  padding: 8px 14px;
-  background: var(--accent-glow);
-  border: 1px solid rgba(74, 158, 173, 0.2);
-  border-radius: var(--radius-sm);
-  color: var(--accent);
-  font-size: 0.8rem;
-  font-weight: 500;
-  white-space: nowrap;
+  border-radius: var(--radius-lg);
   text-decoration: none;
-  transition: all var(--transition);
+  transition: all 0.3s ease;
 }
 
-.contactBtn:hover {
-  background: rgba(74, 158, 173, 0.2);
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
