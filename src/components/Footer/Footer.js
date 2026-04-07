@@ -33,6 +33,7 @@ export default function Footer() {
             <h4 className={styles.heading}>Kontakt</h4>
             <span className={styles.info}>ScandiPep drivs av Andrea Ekeberg, enskild firma</span>
             <span className={styles.info}>Nytorgsbacken 59, 252 45 Helsingborg</span>
+            <span className={styles.info}>Telefon: 0708170438</span>
             <span className={styles.info}>E-post: contact@scandipep.se</span>
           </div>
         </div>
