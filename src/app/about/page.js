@@ -30,12 +30,11 @@ export default function About() {
       <div className="container">
         <div className={styles.hero}>
           <span className={styles.badge}>Om ScandiPep</span>
-          <h1 className={styles.title}>Skandinavisk Precision Möter Forskningskvalitet</h1>
+          <h1 className={styles.title}>Om ScandiPep</h1>
           <p className={styles.subtitle}>
-            ScandiPep grundades med ett tydligt uppdrag: att förse den europeiska
-            forskargemenskapen med pålitligt rena, korrekt dokumenterade peptider — utan
-            kompromisser. Vi tror att kvalitetsforskning börjar med kvalitetsmaterial, och
-            varje produkt vi erbjuder speglar den övertygelsen.
+            ScandiPep startades för att ge forskare i Sverige tillgång till rena och
+            pålitliga forskningsreagenser. Vi vill att du ska kunna lita på att varje
+            produkt är högkvalitativ och ordentligt testad.
           </p>
         </div>
 

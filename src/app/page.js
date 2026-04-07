@@ -24,13 +24,14 @@ export default function Home() {
         <div className={`container ${styles.heroInner}`}>
           <span className={styles.badge}>Lansering snart</span>
           <h1 className={styles.title}>
-            Forskningspeptider
+            Forskningsreagenser
             <br />
-            <span className={styles.accent}>Äntligen i Sverige</span>
+            <span className={styles.accent}>Av Högsta Kvalitet</span>
           </h1>
           <p className={styles.subtitle}>
-            Labbtestade peptider med minst 98% renhet. Analysbevis på varje produkt.
-            Snabb leverans i hela Sverige. Registrera er för forskningsuppdateringar.
+            Vi säljer labbtestade forskningsreagenser med minst 98% renhet.
+            Varje produkt har analysbevis. Snabb leverans i hela Sverige.
+            Registrera dig för att få uppdateringar.
           </p>
           <div className={styles.ctas}>
             <a href="#notify" className="btn btn-primary">
@@ -82,22 +83,22 @@ export default function Home() {
         <div className="container">
           <div className={styles.stackCard}>
             <div className={styles.stackContent}>
-              <span className={styles.stackBadge}>Välj reagenser efter forskningsområde</span>
-              <h2 className={styles.stackTitle}>Hitta rätt laboratoriekemikalier</h2>
+              <span className={styles.stackBadge}>Hitta rätt reagenser</span>
+              <h2 className={styles.stackTitle}>Hitta rätt labbreagenser på 30 sekunder</h2>
               <p className={styles.stackDesc}>
-                Välj forskningsparametrar -- biologisk mekanism, protokollnivå och budget.
-                Vi föreslår en anpassad reagenskombination som kan läggas direkt
-                i varukorgen.
+                Välj vad du vill testa i ditt labb. Vi föreslår en smart kombination
+                av reagenser som passar ditt test och din budget. Allt säljs
+                uteslutande för forskning i labb.
               </p>
               <Link href="/stack-engine" className="btn btn-primary">
                 Starta urvalsverktyget
               </Link>
             </div>
             <div className={styles.stackVisual}>
-              <div className={styles.stackStep}>1. Vilken biologisk mekanism?</div>
-              <div className={styles.stackStep}>2. Protokollnivå</div>
-              <div className={styles.stackStep}>3. Analysbudget</div>
-              <div className={styles.stackResult}>→ Föreslagen reagenskombination</div>
+              <div className={styles.stackStep}>1. Vad vill du testa?</div>
+              <div className={styles.stackStep}>2. Hur stort test?</div>
+              <div className={styles.stackStep}>3. Din budget?</div>
+              <div className={styles.stackResult}>→ Ditt reagensförslag</div>
             </div>
           </div>
         </div>
@@ -112,9 +113,9 @@ export default function Home() {
           <div className={styles.introInner}>
             <h2 className={styles.introTitle}>Varför ScandiPep?</h2>
             <p className={styles.introText}>
-              Vi säljer bara peptider som uppfyller våra egna kvalitetskrav. Varje batch
-              testas av ett oberoende labb och levereras med analysbevis. Inga mellanhänder,
-              inga kompromisser — bara verifierad kvalitet direkt från Europa.
+              Vi säljer bara forskningsreagenser som uppfyller våra höga krav.
+              Varje batch testas av ett oberoende labb och kommer med analysbevis.
+              Inga mellanhänder — bara ren kvalitet direkt från Europa.
             </p>
           </div>
         </div>

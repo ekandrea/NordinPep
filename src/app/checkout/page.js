@@ -21,6 +21,7 @@ export default function Checkout() {
   });
   const [step, setStep] = useState('info');
   const [submitting, setSubmitting] = useState(false);
+  const [confirmed, setConfirmed] = useState(false);
 
   const shipping = getShippingCost(form.country === 'Sverige' ? 'Sweden' : 'EU');
   const total = subtotal + shipping;
@@ -110,7 +111,20 @@ export default function Checkout() {
                 </select>
               </div>
 
-              <button type="submit" className={`btn btn-primary ${styles.payBtn}`} disabled={submitting}>
+              <label style={{ display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.5, cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={confirmed}
+                  onChange={(e) => setConfirmed(e.target.checked)}
+                  required
+                  style={{ marginTop: 3, accentColor: 'var(--accent)' }}
+                />
+                Jag bekräftar att jag är minst 18 år och att jag köper dessa produkter
+                uteslutande för laboratorie- och forskningsändamål. De får inte användas
+                på människor eller djur.
+              </label>
+
+              <button type="submit" className={`btn btn-primary ${styles.payBtn}`} disabled={submitting || !confirmed}>
                 {submitting ? 'Skickar...' : 'Gå vidare till betalning'}
               </button>
             </form>

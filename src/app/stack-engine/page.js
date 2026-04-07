@@ -7,6 +7,19 @@ import { getProductById } from '@/data/products';
 import { researchInterests, experienceLevels, budgetRanges, getStackRecommendation } from '@/data/stackLogic';
 import styles from './page.module.css';
 
+const interestDescriptions = {
+  'Vävnadsreparation & Regeneration': 'Hur celler och vävnader reparerar sig',
+  'Neurobiologi & Kognition': 'Hur hjärnan och nerverna fungerar',
+  'Cellulär Åldring & Kollagen': 'Hur celler åldras och hud fungerar',
+  'Gastrointestinal Funktion & Immunologi': 'Hur immunförsvaret och mage-tarm fungerar',
+};
+
+const levelDescriptions = {
+  'Grundläggande protokoll': 'Litet test (små mängder)',
+  'Standardprotokoll': 'Vanligt test',
+  'Avancerat protokoll': 'Större test',
+};
+
 export default function StackEngine() {
   const [step, setStep] = useState(0);
   const [interest, setInterest] = useState(null);
@@ -54,27 +67,21 @@ export default function StackEngine() {
     setRecommendation(null);
   };
 
-  const interestDescriptions = {
-    'Vävnadsreparation & Regeneration': 'In-vitro-modeller för angiogenes, vävnadsreparation och cytoprotektiva mekanismer',
-    'Neurobiologi & Kognition': 'GABAerg modulering, neurotrofinuttryck och serotonerga signalvägar',
-    'Cellulär Åldring & Kollagen': 'Kollagensyntes, fibroblastaktivitet och telomerasmodulering',
-    'Gastrointestinal Funktion & Immunologi': 'NF-kappaB-hämning, intestinala inflammationsmodeller och immunmekanismer',
-  };
-
   return (
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.badge}>Välj laboratoriekemikalier efter forskningsområde</span>
+          <span className={styles.badge}>Hitta rätt labbreagenser på 30 sekunder</span>
           <h1 className={styles.title}>Stack Engine</h1>
           <p className={styles.subtitle}>
-            Välj forskningsparametrar — vi föreslår reagenser baserat på biologisk mekanism och protokollnivå.
+            Välj vad du vill testa i ditt labb. Vi föreslår en smart kombination
+            av reagenser som passar ditt test och din budget.
+            Allt säljs uteslutande för forskning i labb — inget annat.
           </p>
         </div>
 
-        {/* Progress */}
         <div className={styles.progress}>
-          {['Mekanism', 'Protokoll', 'Budget', 'Resultat'].map((label, i) => (
+          {['Område', 'Storlek', 'Budget', 'Förslag'].map((label, i) => (
             <div
               key={label}
               className={`${styles.progressStep} ${i <= step ? styles.progressActive : ''} ${i < step ? styles.progressDone : ''}`}
@@ -86,10 +93,9 @@ export default function StackEngine() {
         </div>
 
         <div className={styles.card}>
-          {/* Steg 1 */}
           {step === 0 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Vilken biologisk mekanism studeras?</h2>
+              <h2 className={styles.question}>Vad vill du testa i ditt labb?</h2>
               <div className={styles.options}>
                 {researchInterests.map((ri) => (
                   <button
@@ -97,18 +103,17 @@ export default function StackEngine() {
                     className={`${styles.option} ${interest === ri ? styles.optionActive : ''}`}
                     onClick={() => setInterest(ri)}
                   >
-                    <strong>{ri}</strong>
-                    <span className={styles.optionDesc}>{interestDescriptions[ri]}</span>
+                    <strong>{interestDescriptions[ri]}</strong>
+                    <span className={styles.optionDesc}>{ri}</span>
                   </button>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Steg 2 */}
           {step === 1 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Protokollnivå</h2>
+              <h2 className={styles.question}>Hur stort ska ditt labbtest vara?</h2>
               <div className={styles.options}>
                 {experienceLevels.map((el) => (
                   <button
@@ -116,17 +121,17 @@ export default function StackEngine() {
                     className={`${styles.option} ${experience === el ? styles.optionActive : ''}`}
                     onClick={() => setExperience(el)}
                   >
-                    {el}
+                    <strong>{levelDescriptions[el]}</strong>
+                    <span className={styles.optionDesc}>{el}</span>
                   </button>
                 ))}
               </div>
             </div>
           )}
 
-          {/* Steg 3 */}
           {step === 2 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Analysbudget</h2>
+              <h2 className={styles.question}>Hur mycket vill du spendera på reagenserna?</h2>
               <div className={styles.options}>
                 {budgetRanges.map((br) => (
                   <button
@@ -141,12 +146,11 @@ export default function StackEngine() {
             </div>
           )}
 
-          {/* Resultat */}
           {step === 3 && recommendation && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Föreslagen kombination för biokemisk analys</h2>
+              <h2 className={styles.question}>Här är förslag på labbreagenser för ditt test</h2>
               <p className={styles.resultMeta}>
-                Baserat på: {interest} · {experience} · {budgetRanges.find(b => b.value === budget)?.label}
+                Baserat på dina val har vi satt ihop en smart kombination av forskningsreagenser.
               </p>
               <div className={styles.resultList}>
                 {recommendation.map((product) => (
@@ -166,13 +170,16 @@ export default function StackEngine() {
                 <span>Totalt</span>
                 <strong>{totalPrice} kr</strong>
               </div>
+              <div className={styles.disclaimer}>
+                Alla produkter är endast avsedda för forskning i labb och får inte
+                användas på människor eller djur.
+              </div>
               <button className="btn btn-primary" onClick={addStackToCart} style={{ width: '100%' }}>
-                Lägg analyspaket i varukorgen — {totalPrice} kr
+                Lägg hela förslaget i varukorgen — {totalPrice} kr
               </button>
             </div>
           )}
 
-          {/* Navigation */}
           {step < 3 && (
             <div className={styles.nav}>
               {step > 0 && (
@@ -193,8 +200,8 @@ export default function StackEngine() {
 
           {step === 3 && (
             <div className={styles.nav}>
-              <button className="btn btn-ghost" onClick={handleBack}>&larr; Ändra svar</button>
-              <button className="btn btn-secondary" onClick={reset}>Börja om</button>
+              <button className="btn btn-ghost" onClick={handleBack}>&larr; Ändra val</button>
+              <button className="btn btn-secondary" onClick={reset}>Gör om valet</button>
             </div>
           )}
         </div>

@@ -58,17 +58,14 @@ export default function Footer() {
 
         <div className={styles.disclaimer}>
           <p>
-            Alla produkter säljs uteslutande för laboratorie- och forskningsändamål. Ej avsett för
-            mänsklig konsumtion. ScandiPep uppmuntrar inte användning av produkter för andra ändamål
-            än legitim forskning. Genom att handla hos ScandiPep bekräftar du att du är minst 18 år
-            och att produkterna uteslutande kommer att användas i forskningssyfte.
+            Alla produkter säljs uteslutande för laboratorie- och forskningsändamål.
+            De får inte användas på människor eller djur. Genom att handla bekräftar
+            du att du är minst 18 år och att produkterna bara används i forskning.
           </p>
         </div>
 
         <div className={styles.bottom}>
-          <span>&copy; {new Date().getFullYear()} ScandiPep. Alla rättigheter förbehållna.</span>
-          <span className={styles.sep}>|</span>
-          <span>Forskningskemikalier — ej för mänsklig konsumtion</span>
+          <span>&copy; {new Date().getFullYear()} ScandiPep — Forskningsreagenser</span>
         </div>
       </div>
     </footer>
