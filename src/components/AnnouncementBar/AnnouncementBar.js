@@ -5,7 +5,7 @@ export default function AnnouncementBar() {
     <div className={styles.bar}>
       <div className={styles.inner}>
         <span className={styles.text}>
-          Lansering snart &nbsp;·&nbsp; Registrera dig för 10% rabatt &nbsp;·&nbsp; Fri frakt över 500 kr
+          Lansering snart &nbsp;·&nbsp; 10% rabatt &nbsp;·&nbsp; Fri frakt över 500&nbsp;kr
         </span>
       </div>
     </div>
