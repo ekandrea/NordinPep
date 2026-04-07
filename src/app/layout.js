@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
         <CartProvider>
           <AnnouncementBar />
           <Navbar />
-          <main style={{ paddingTop: 'calc(var(--nav-height) + 36px)' }}>{children}</main>
+          <main style={{ paddingTop: 'var(--nav-height)' }}>{children}</main>
           <Footer />
           <CartDrawer />
           <CookieConsent />

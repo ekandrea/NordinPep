@@ -1,6 +1,6 @@
 .nav {
   position: fixed;
-  top: 36px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 100;
@@ -167,7 +167,7 @@
 @media (max-width: 768px) {
   .links {
     position: fixed;
-    top: calc(var(--nav-height) + 36px);
+    top: var(--nav-height);
     left: 0;
     right: 0;
     flex-direction: column;
