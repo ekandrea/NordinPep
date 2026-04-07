@@ -55,26 +55,26 @@ export default function StackEngine() {
   };
 
   const interestDescriptions = {
-    'Återhämtning & Skador': 'Forskning på återhämtningsmekanismer och vävnadsreparation',
-    'Fokus & Stress': 'Forskning på kognition, stressmekanismer och neurofunktion',
-    'Hud & Anti-Aging': 'Forskning på kollagensyntes, hudbiologi och åldrandeprocesser',
-    'Mage & Inflammation': 'Forskning på gastrointestinal funktion och immunmekanismer',
+    'Vävnadsreparation & Regeneration': 'In-vitro-modeller för angiogenes, vävnadsreparation och cytoprotektiva mekanismer',
+    'Neurobiologi & Kognition': 'GABAerg modulering, neurotrofinuttryck och serotonerga signalvägar',
+    'Cellulär Åldring & Kollagen': 'Kollagensyntes, fibroblastaktivitet och telomerasmodulering',
+    'Gastrointestinal Funktion & Immunologi': 'NF-kappaB-hämning, intestinala inflammationsmodeller och immunmekanismer',
   };
 
   return (
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.badge}>Hitta rätt peptider för din forskning</span>
+          <span className={styles.badge}>Välj laboratoriekemikalier efter forskningsområde</span>
           <h1 className={styles.title}>Stack Engine</h1>
           <p className={styles.subtitle}>
-            Svara på 3 snabba frågor — vi rekommenderar peptider baserat på ditt forskningsintresse.
+            Välj forskningsparametrar — vi föreslår reagenser baserat på biologisk mekanism och protokollnivå.
           </p>
         </div>
 
         {/* Progress */}
         <div className={styles.progress}>
-          {['Mål', 'Erfarenhet', 'Budget', 'Din Stack'].map((label, i) => (
+          {['Mekanism', 'Protokoll', 'Budget', 'Resultat'].map((label, i) => (
             <div
               key={label}
               className={`${styles.progressStep} ${i <= step ? styles.progressActive : ''} ${i < step ? styles.progressDone : ''}`}
@@ -89,7 +89,7 @@ export default function StackEngine() {
           {/* Steg 1 */}
           {step === 0 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Vilket forskningsområde intresserar dig?</h2>
+              <h2 className={styles.question}>Vilken biologisk mekanism studeras?</h2>
               <div className={styles.options}>
                 {researchInterests.map((ri) => (
                   <button
@@ -108,7 +108,7 @@ export default function StackEngine() {
           {/* Steg 2 */}
           {step === 1 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Hur mycket vet du om peptider?</h2>
+              <h2 className={styles.question}>Protokollnivå</h2>
               <div className={styles.options}>
                 {experienceLevels.map((el) => (
                   <button
@@ -126,7 +126,7 @@ export default function StackEngine() {
           {/* Steg 3 */}
           {step === 2 && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Vad är din budget?</h2>
+              <h2 className={styles.question}>Analysbudget</h2>
               <div className={styles.options}>
                 {budgetRanges.map((br) => (
                   <button
@@ -144,7 +144,7 @@ export default function StackEngine() {
           {/* Resultat */}
           {step === 3 && recommendation && (
             <div className={styles.stepContent}>
-              <h2 className={styles.question}>Din personliga stack</h2>
+              <h2 className={styles.question}>Föreslagen kombination för biokemisk analys</h2>
               <p className={styles.resultMeta}>
                 Baserat på: {interest} · {experience} · {budgetRanges.find(b => b.value === budget)?.label}
               </p>
@@ -167,7 +167,7 @@ export default function StackEngine() {
                 <strong>{totalPrice} kr</strong>
               </div>
               <button className="btn btn-primary" onClick={addStackToCart} style={{ width: '100%' }}>
-                Lägg allt i varukorgen — {totalPrice} kr
+                Lägg analyspaket i varukorgen — {totalPrice} kr
               </button>
             </div>
           )}
@@ -186,7 +186,7 @@ export default function StackEngine() {
                 disabled={!canProceed}
                 style={{ marginLeft: 'auto' }}
               >
-                {step === 2 ? 'Visa min stack' : 'Nästa →'}
+                {step === 2 ? 'Visa förslag' : 'Nästa →'}
               </button>
             </div>
           )}

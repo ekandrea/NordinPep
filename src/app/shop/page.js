@@ -17,9 +17,9 @@ export default function Shop() {
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <h1 className={styles.title}>Forskningsprodukter</h1>
+          <h1 className={styles.title}>Laboratoriekemikalier</h1>
           <p className={styles.subtitle}>
-            Alla peptider har ≥98% renhet, är COA-verifierade och säljs uteslutande för forskning.
+            Samtliga peptidreagens har ≥98% HPLC-renhet, är COA-verifierade och tillhandahålls uteslutande för laboratorie- och forskningsändamål.
           </p>
         </div>
 

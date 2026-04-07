@@ -105,7 +105,7 @@ export default function ContentGenerator() {
                 type="text"
                 value={topic}
                 onChange={(e) => setTopic(e.target.value)}
-                placeholder="T.ex. BPC-157, peptider för nybörjare, rekonstituering..."
+                placeholder="T.ex. BPC-157, peptidforskning, rekonstituering..."
               />
             </div>
             <div className={styles.field}>

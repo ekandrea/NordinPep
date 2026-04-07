@@ -1,20 +1,20 @@
 const stacks = {
-  'Återhämtning & Skador': {
+  'Vävnadsreparation & Regeneration': {
     'low': ['bpc-157', 'bacteriostatic-water'],
     'mid': ['bpc-157', 'bacteriostatic-water', 'nasal-spray-kit'],
     'high': ['bpc-157', 'kpv', 'bacteriostatic-water', 'nasal-spray-kit'],
   },
-  'Fokus & Stress': {
+  'Neurobiologi & Kognition': {
     'low': ['selank', 'bacteriostatic-water'],
     'mid': ['selank', 'semax', 'bacteriostatic-water'],
     'high': ['selank', 'semax', 'bacteriostatic-water', 'nasal-spray-kit'],
   },
-  'Hud & Anti-Aging': {
+  'Cellulär Åldring & Kollagen': {
     'low': ['ghk-cu', 'bacteriostatic-water'],
     'mid': ['ghk-cu', 'epithalon', 'bacteriostatic-water'],
     'high': ['ghk-cu', 'epithalon', 'bpc-157', 'bacteriostatic-water'],
   },
-  'Mage & Inflammation': {
+  'Gastrointestinal Funktion & Immunologi': {
     'low': ['kpv', 'bacteriostatic-water'],
     'mid': ['kpv', 'bpc-157', 'bacteriostatic-water'],
     'high': ['kpv', 'bpc-157', 'selank', 'bacteriostatic-water', 'nasal-spray-kit'],
@@ -22,13 +22,13 @@ const stacks = {
 };
 
 export const researchInterests = [
-  'Återhämtning & Skador',
-  'Fokus & Stress',
-  'Hud & Anti-Aging',
-  'Mage & Inflammation',
+  'Vävnadsreparation & Regeneration',
+  'Neurobiologi & Kognition',
+  'Cellulär Åldring & Kollagen',
+  'Gastrointestinal Funktion & Immunologi',
 ];
 
-export const experienceLevels = ['Nybörjare', 'Har lite koll', 'Erfaren'];
+export const experienceLevels = ['Grundläggande protokoll', 'Standardprotokoll', 'Avancerat protokoll'];
 
 export const budgetRanges = [
   { label: 'Under 500 kr', value: 'low' },

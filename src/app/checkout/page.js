@@ -120,17 +120,6 @@ export default function Checkout() {
 
               <div className={styles.paymentBox}>
                 <div className={styles.paymentMethod}>
-                  <h3 className={styles.paymentLabel}>Swish</h3>
-                  <p className={styles.paymentDesc}>Snabbast. Skicka till:</p>
-                  <div className={styles.paymentValue}>073-XXX XX XX</div>
-                  <p className={styles.paymentNote}>
-                    Ange ditt ordernummer (din e-post) som meddelande.
-                  </p>
-                </div>
-
-                <div className={styles.paymentDivider}>eller</div>
-
-                <div className={styles.paymentMethod}>
                   <h3 className={styles.paymentLabel}>Banköverföring</h3>
                   <p className={styles.paymentDesc}>Överför till:</p>
                   <div className={styles.paymentDetails}>

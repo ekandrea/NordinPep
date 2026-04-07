@@ -30,14 +30,14 @@ export default function Home() {
           </h1>
           <p className={styles.subtitle}>
             Labbtestade peptider med minst 98% renhet. Analysbevis på varje produkt.
-            Snabb leverans i hela Sverige. Registrera dig för att få veta först.
+            Snabb leverans i hela Sverige. Registrera er för forskningsuppdateringar.
           </p>
           <div className={styles.ctas}>
             <a href="#notify" className="btn btn-primary">
-              Meddela mig vid lansering
+              Registrera för forskningsuppdateringar
             </a>
             <Link href="/shop" className="btn btn-secondary">
-              Se kommande produkter
+              Se laboratoriekemikalier
             </Link>
           </div>
         </div>
@@ -82,22 +82,22 @@ export default function Home() {
         <div className="container">
           <div className={styles.stackCard}>
             <div className={styles.stackContent}>
-              <span className={styles.stackBadge}>Vet inte var du ska börja?</span>
-              <h2 className={styles.stackTitle}>Hitta rätt peptider</h2>
+              <span className={styles.stackBadge}>Välj reagenser efter forskningsområde</span>
+              <h2 className={styles.stackTitle}>Hitta rätt laboratoriekemikalier</h2>
               <p className={styles.stackDesc}>
-                Svara på 3 snabba frågor om ditt forskningsintresse, erfarenhet och budget.
-                Vi föreslår en skräddarsydd peptidstack — sen lägger du allt
-                i varukorgen med ett klick.
+                Välj forskningsparametrar -- biologisk mekanism, protokollnivå och budget.
+                Vi föreslår en anpassad reagenskombination som kan läggas direkt
+                i varukorgen.
               </p>
               <Link href="/stack-engine" className="btn btn-primary">
-                Starta testet
+                Starta urvalsverktyget
               </Link>
             </div>
             <div className={styles.stackVisual}>
-              <div className={styles.stackStep}>1. Vilket forskningsområde?</div>
-              <div className={styles.stackStep}>2. Hur erfaren är du?</div>
-              <div className={styles.stackStep}>3. Vad är din budget?</div>
-              <div className={styles.stackResult}>→ Din personliga stack</div>
+              <div className={styles.stackStep}>1. Vilken biologisk mekanism?</div>
+              <div className={styles.stackStep}>2. Protokollnivå</div>
+              <div className={styles.stackStep}>3. Analysbudget</div>
+              <div className={styles.stackResult}>→ Föreslagen reagenskombination</div>
             </div>
           </div>
         </div>

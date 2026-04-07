@@ -98,7 +98,7 @@ export default function ProductPage() {
 
             {product.research && (
               <div className={styles.research}>
-                <h3>Vad säger forskningen?</h3>
+                <h3>Preklinisk forskningsöversikt</h3>
                 <p>{product.research}</p>
               </div>
             )}
@@ -163,20 +163,20 @@ export default function ProductPage() {
                 className="btn btn-primary"
                 onClick={() => { addItem(product.id, qty); setQty(1); }}
               >
-                Lägg i varukorg — {product.price * qty} kr
+                Lägg till för analys — {product.price * qty} kr
               </button>
             </div>
 
             {/* Trust strip */}
             <div className={styles.trustStrip}>
-              <span>✓ Tredjepartstestad</span>
+              <span>✓ Oberoende labbverifierad</span>
               <span>✓ Fri frakt 500kr+</span>
-              <span>✓ Skickas idag före 14:00</span>
+              <span>✓ Expedieras samma dag före 14:00</span>
             </div>
 
             <div className={styles.disclaimer}>
               <p>
-                Säljs som forskningsprodukt. Inte ett läkemedel. Ej för mänsklig konsumtion.
+                Tillhandahålls som laboratoriekemikalie. Ej godkänt för humant bruk. Uteslutande avsett för in-vitro- och laboratorieforskning.
               </p>
             </div>
           </div>

@@ -26,7 +26,7 @@ export default function Privacy() {
             <ul>
               <li>Namn och kontaktuppgifter (e-post, adress, telefonnummer)</li>
               <li>Leveransadress och faktureringsuppgifter</li>
-              <li>Betalningsinformation (Swish-nummer eller bankuppgifter — vi lagrar aldrig känsliga uppgifter)</li>
+              <li>Betalningsinformation (bankuppgifter för överföring — vi lagrar aldrig känsliga uppgifter)</li>
               <li>Orderhistorik och kundnummer</li>
               <li>Teknisk data vid besök (IP-adress, webbläsartyp, cookies)</li>
             </ul>
@@ -79,7 +79,7 @@ export default function Privacy() {
             <p>
               Vi vidtar tekniska och organisatoriska åtgärder för att skydda dina
               personuppgifter, inklusive HTTPS-kryptering, säker betalningshantering via
-              Swish och banköverföring, samt begränsad åtkomst till kunddata.
+              banköverföring, samt begränsad åtkomst till kunddata.
             </p>
 
             <h2>9. Tillsynsmyndighet</h2>

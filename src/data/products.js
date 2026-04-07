@@ -3,9 +3,9 @@ export const products = [
     id: 'bpc-157',
     slug: 'bpc-157',
     name: 'BPC-157',
-    subtitle: 'Studerad för: Återhämtning & Tarmfunktion',
+    subtitle: 'Studerad för: Vävnadsreparation & gastrointestinal funktion',
     price: 449,
-    category: 'Återhämtning',
+    category: 'Vävnadsreparation',
     popular: true,
     specs: {
       purity: '≥98%',
@@ -21,7 +21,7 @@ export const products = [
       shelfLife: '36 månader (oöppnad)',
     },
     description:
-      'En av de mest populära forskningspeptiderna. Över 100 publicerade studier i prekliniska modeller. Fokusområde: återhämtningsmekanismer och tarmfunktion.',
+      'En av de mest omfattande studerade forskningspeptiderna. Över 100 publicerade studier i prekliniska modeller. Fokusområde: vävnadsreparationsmekanismer och gastrointestinal funktion.',
     research:
       'Studerad i över 100 granskade publikationer. Prekliniskt fokus på vävnadsreparation, gastrointestinal funktion och biologiska reparationsmekanismer.',
     image: '/images/product-bpc157.svg',
@@ -30,9 +30,9 @@ export const products = [
     id: 'selank',
     slug: 'selank',
     name: 'Selank',
-    subtitle: 'Studerad för: Stress & Kognition',
+    subtitle: 'Studerad för: GABAerg modulering & kognition',
     price: 399,
-    category: 'Fokus',
+    category: 'Neurobiologi',
     popular: true,
     specs: {
       purity: '≥98%',
@@ -48,7 +48,7 @@ export const products = [
       shelfLife: '36 månader (oöppnad)',
     },
     description:
-      'Baserad på tuftsin, en naturlig immunpeptid. Studerad i prekliniska modeller för stressrelaterade mekanismer och kognitiv funktion. Populär inom nootropisk forskning.',
+      'Baserad på tuftsin, en naturlig immunpeptid. Studerad i prekliniska modeller för GABAerg modulering och kognitiv funktion. Frekvent citerad inom neurobiologisk forskning.',
     research:
       'Undersökt i beteendemodeller för stressrelaterade mekanismer, kognition och GABAerg modulering. Studerad för BDNF-uttryck.',
     image: '/images/product-selank.svg',
@@ -57,9 +57,9 @@ export const products = [
     id: 'semax',
     slug: 'semax',
     name: 'Semax',
-    subtitle: 'Studerad för: Kognition & Neuroprotection',
+    subtitle: 'Studerad för: Neurotrofiner & neuroprotektiva mekanismer',
     price: 419,
-    category: 'Fokus',
+    category: 'Neurobiologi',
     popular: false,
     specs: {
       purity: '≥98%',
@@ -138,9 +138,9 @@ export const products = [
     id: 'kpv',
     slug: 'kpv',
     name: 'KPV',
-    subtitle: 'Studerad för: Inflammation & Immunfunktion',
+    subtitle: 'Studerad för: NF-kappaB-hämning & immunmekanismer',
     price: 389,
-    category: 'Återhämtning',
+    category: 'Vävnadsreparation',
     popular: false,
     specs: {
       purity: '≥98%',
@@ -203,7 +203,7 @@ export const products = [
   },
 ];
 
-export const categories = ['Alla', 'Återhämtning', 'Fokus', 'Anti-Aging', 'Tillbehör'];
+export const categories = ['Alla', 'Vävnadsreparation', 'Neurobiologi', 'Anti-Aging', 'Tillbehör'];
 
 export const volumeDiscounts = [
   { minQty: 3, discount: 5, label: '3+ st = 5% rabatt' },

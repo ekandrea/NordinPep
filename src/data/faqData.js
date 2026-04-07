@@ -1,8 +1,8 @@
 export const faqs = [
   {
-    question: 'Är peptider lagliga?',
+    question: 'Vilken juridisk status har forskningspeptider?',
     answer:
-      'Ja. Peptider säljs som forskningskemikalier och är helt lagliga att köpa i Sverige och EU. De är inte klassade som läkemedel eller kontrollerade substanser. Alla våra produkter säljs för forskningsändamål.',
+      'Produkterna tillhandahålls som laboratoriekemikalier. De är ej godkända för humant bruk och omfattas av regler för laboratorieanvändning. Det är köparens ansvar att följa gällande svensk lagstiftning rörande forskningssubstanser.',
   },
   {
     question: 'Hur lång tid tar leveransen?',
@@ -15,9 +15,9 @@ export const faqs = [
       'Fri frakt i Sverige vid köp över 500 kr. Under 500 kr kostar det 49 kr. EU-leverans kostar 99 kr oavsett belopp.',
   },
   {
-    question: 'Hur förvarar jag peptider?',
+    question: 'Hur förvaras peptidreagens?',
     answer:
-      'Oöppnade peptider i pulverform: frys (-20°C). Rekonstituerade peptider: förvara i kyl (2-8°C) och använd i dina experiment inom 2-4 veckor. Bakteriostatiskt vatten: rumstemperatur. Kolla alltid produktsidan för exakta instruktioner.',
+      'Oöppnade peptider i lyofiliserad form: frys (-20°C). Rekonstituerade lösningar: förvara i kyl (2-8°C) och använd inom 2-4 veckor. Bakteriostatiskt vatten: rumstemperatur. Se produktspecifikationen för detaljerade förvaringsprotokoll.',
   },
   {
     question: 'Vad är bakteriostatiskt vatten?',
@@ -30,8 +30,8 @@ export const faqs = [
       'Ett analysbevis visar att ett oberoende labb har testat peptiden och bekräftat renheten. Alla våra produkter har minst 98% renhet verifierad via HPLC-test. Du kan begära analysbevis för vilken produkt som helst.',
   },
   {
-    question: 'Hur betalar jag?',
+    question: 'Vilka betalningsmetoder finns?',
     answer:
-      'Vi tar Swish (snabbast) och banköverföring. Du får betalningsinformation i kassan efter att du fyllt i leveransuppgifterna. Vi skickar din order så fort betalningen är bekräftad.',
+      'Banköverföring via företagskonto. Betalningsinformation tillhandahålls i kassan efter att leveransuppgifterna fyllts i. Ordern expedieras efter bekräftad betalning.',
   },
 ];

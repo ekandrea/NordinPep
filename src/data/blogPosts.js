@@ -1,9 +1,9 @@
 export const blogPosts = [
   {
-    slug: 'vad-ar-bpc-157',
-    title: 'Vad är BPC-157? En forskningsöversikt',
+    slug: 'bpc-157-farmakologisk-profil',
+    title: 'BPC-157: Farmakologisk profil och molekylära verkningsmekanismer',
     excerpt:
-      'En djupgående titt på en av de mest studerade peptiderna inom regenerativ forskning — dess ursprung, mekanismer och den prekliniska evidensen bakom Body Protection Compound-157.',
+      'En systematisk genomgång av BPC-157 inom regenerativ forskning -- molekylär struktur, verkningsmekanismer och den prekliniska evidensbasen för Body Protection Compound-157.',
     date: '2025-12-15',
     readTime: '5 min läsning',
     category: 'Forskning',
@@ -30,10 +30,10 @@ Det är viktigt att notera att den stora majoriteten av BPC-157-forskning har ge
 Forskare fortsätter att undersöka BPC-157 i en rad biologiska system, med särskilt intresse för dess verkningsmekanismer på molekylär nivå. Peptidens stabilitet, välkarakteriserade sekvens och breda prekliniska profil gör den till ett värdefullt verktyg i laboratorieforskningsmiljöer.`,
   },
   {
-    slug: 'selank-vs-semax',
-    title: 'Selank vs Semax: Jämförelse av nootropiska peptider',
+    slug: 'selank-semax-komparativ-analys',
+    title: 'Selank vs Semax: Komparativ analys av neuropeptidprofiler',
     excerpt:
-      'En jämförelse sida vid sida av två framstående neuropeptider — deras distinkta mekanismer, forskningsprofiler och vad som skiljer dem åt inom kognitiv forskning.',
+      'En jämförande analys av två framstående neuropeptider -- distinkta verkningsmekanismer, farmakologiska profiler och differentierade forskningsapplikationer inom neurobiologi.',
     date: '2025-11-28',
     readTime: '6 min läsning',
     category: 'Jämförelse',
@@ -64,10 +64,10 @@ Semax är en syntetisk heptapeptid härledd från ACTH (4-10)-fragmentet — en 
 Även om båda peptiderna studeras inom neurovetenskap skiljer de sig i grunden. Selanks forskningsprofil lutar mot anxiolytiska och immunmodulerande undersökningar, medan Semax-forskning tenderar att fokusera på kognitiv förbättring och neuroprotektion. Deras distinkta modermolekyler — tuftsin för Selank och ACTH för Semax — bidrar till dessa olika farmakologiska profiler.`,
   },
   {
-    slug: 'ghk-cu-kopparpeptid',
-    title: 'GHK-Cu: Kopparpeptidrevolutionen',
+    slug: 'ghk-cu-genuttryck-kollagensyntes',
+    title: 'GHK-Cu: Kopparpeptidkomplex -- genuttryck och kollagensyntes',
     excerpt:
-      'Utforska vetenskapen bakom den naturligt förekommande kopparbindande tripeptiden — från upptäckt till banbrytande forskning om genuttryck och vävnadsombildning.',
+      'Forskningsöversikt av den kopparbindande tripeptiden GHK-Cu -- från initial identifiering till prekliniska data om genuttrycksmodulering och extracellulärt matrixremodellering.',
     date: '2025-11-10',
     readTime: '5 min läsning',
     category: 'Forskning',
@@ -92,10 +92,10 @@ GHK-Cu:s biologiska aktivitet anses förmedlas primärt genom dess kopparbindand
 Peptiden fortsätter att studeras inom flera forskningsdomäner. Dess välkarakteriserade struktur, naturliga förekomst i mänsklig biologi och breda genuttrycksprofil gör den till en unikt positionerad forskningssubstans.`,
   },
   {
-    slug: 'rekonstituera-peptider',
-    title: 'Hur man rekonstituerar peptider: En laboratorieguide',
+    slug: 'rekonstituering-laboratorieprotokoll',
+    title: 'Peptidrekonstituering: Standardprotokoll för laboratoriebruk',
     excerpt:
-      'En steg-för-steg-guide för forskare om korrekt peptidrekonstituering — från val av lösningsmedel till beräkning av koncentrationer.',
+      'Protokoll för rekonstituering av lyofiliserade peptider -- val av lösningsmedel, beräkning av molära koncentrationer och korrekt laboratorieförfarande.',
     date: '2025-10-22',
     readTime: '4 min läsning',
     category: 'Guide',
@@ -117,7 +117,7 @@ Det vanligaste rekonstituiringslösningsmedlet för forskningspeptider är bakte
 
 1. **Förberedelse:** Se till att din arbetsyta är ren. Ta ut peptidvialen från frysförvaring och låt den nå rumstemperatur gradvis — cirka 5-10 minuter. Undvik snabba temperaturförändringar.
 
-2. **Tillsats av lösningsmedel:** Använd en steril spruta och rikta strålen mot glasväggen i vialen, inte direkt på det lyofiliserade pulvret, för att förhindra skumning och nedbrytning.
+2. **Tillsats av lösningsmedel:** Använd en steril laboratoriepipett och dispensera lösningsmedel längs glasväggen i vialen, inte direkt på det lyofiliserade pulvret, för att förhindra skumning och nedbrytning.
 
 3. **Upplösning:** Låt lösningsmedlet lösa upp peptiden naturligt. Försiktig svängning kan accelerera upplösningen, men kraftig skakning bör undvikas då det kan denaturera peptiden.
 
@@ -132,10 +132,10 @@ För att bestämma koncentrationen av din rekonstituerade lösning, dividera den
 Rekonstituerade peptider bör förvaras vid 2-8°C (kylt) och användas inom den tidsram som anges av tillverkaren. De flesta rekonstituerade peptider bibehåller stabilitet i 2-4 veckor under korrekt kylförvaring.`,
   },
   {
-    slug: 'forsta-analysbevis-coa',
-    title: 'Förstå analysbevis (COA)',
+    slug: 'analysbevis-coa-tolkningsguide',
+    title: 'Analysbevis (COA): Tolkning och kvalitetsbedömning',
     excerpt:
-      'Vad varje forskare bör veta om analysbevis — hur man läser dem, vad nyckelmåtten betyder och varför de spelar roll för forskningsintegritet.',
+      'Vad laboratoriepersonal bör veta om analysbevis -- HPLC-data, masspektrometri, renhetskriterier och deras betydelse för reproducerbarhet i forskning.',
     date: '2025-10-05',
     readTime: '4 min läsning',
     category: 'Guide',
@@ -164,10 +164,10 @@ När du granskar ett COA, verifiera följande: batch- eller lot-numret matchar d
 COA genererade av oberoende tredjepartslaboratorier väger tyngre än intern testning, eftersom de eliminerar potentiella intressekonflikter. Hos ScandiPep utfärdas alla COA av ackrediterade oberoende analytiska laboratorier för att säkerställa opartisk kvalitetsverifiering.`,
   },
   {
-    slug: 'bpc-157-guide-nyborjare',
-    title: 'Vad är BPC-157? Komplett guide för nybörjare',
+    slug: 'bpc-157-preklinisk-forskningsoversikt',
+    title: 'BPC-157: Farmakologisk profil och preklinisk forskningsöversikt',
     excerpt:
-      'Allt du behöver veta om BPC-157 — vad det är, vad forskningen visar, hur det förvaras och varför det blivit så populärt inom peptidforskning i Sverige.',
+      'Omfattande genomgång av BPC-157 som forskningsreagens -- preklinisk evidens, förvaringsprotokoll och substansens ställning inom svensk laboratorieverksamhet.',
     date: '2026-01-15',
     readTime: '7 min läsning',
     category: 'Guide',
@@ -252,10 +252,10 @@ Lyofiliserat pulver förvaras i frysen vid -20°C. Rekonstituerad lösning (blan
 Priset varierar beroende på mängd och renhet. Hos ScandiPep hittar du aktuella priser i vår butik på scandipep.se/shop. Vi rekommenderar att alltid jämföra pris mot kvalitet — billigaste alternativet saknar ofta ordentliga analysbevis.`,
   },
   {
-    slug: 'peptider-for-nyborjare',
-    title: 'Peptider för nybörjare — var börjar man?',
+    slug: 'introduktion-peptidforskning-substansklasser',
+    title: 'Introduktion till peptidforskning: substansklasser och laboratorieprotokoll',
     excerpt:
-      'En nybörjarvänlig guide till peptider — vad de är, vilka som är populära, hur du väljer rätt och vad du ska leta efter hos en leverantör.',
+      'En grundläggande introduktion till forskningspeptider -- substansklassificering, vanliga reagenser, kvalitetskriterier och val av leverantör för laboratorieverksamhet.',
     date: '2026-02-05',
     readTime: '7 min läsning',
     category: 'Guide',
@@ -361,10 +361,10 @@ Det beror på ditt intresse. BPC-157 är den mest studerade och har flest public
 Bakteriostatiskt vatten är sterilt vatten med 0,9% bensylalkohol. Det används för att rekonstituera (lösa upp) lyofiliserade peptider. Bensylalkoholen fungerar som konserveringsmedel och hindrar bakterier från att växa i lösningen.`,
   },
   {
-    slug: 'selank-allt-du-behover-veta',
-    title: 'Selank — allt du behöver veta',
+    slug: 'selank-mekanismer-forskningsapplikationer',
+    title: 'Selank: Mekanismer, preklinisk data och forskningsapplikationer',
     excerpt:
-      'En komplett guide om Selank — vad det är, vilka forskningsområden som studerats, hur det skiljer sig från Semax och hur det förvaras korrekt.',
+      'Detaljerad genomgång av Selank som forskningsreagens -- GABAerga mekanismer, BDNF-modulering, immunologisk profil och jämförelse med Semax.',
     date: '2026-03-10',
     readTime: '7 min läsning',
     category: 'Forskning',

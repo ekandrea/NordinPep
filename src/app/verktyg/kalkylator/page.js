@@ -14,11 +14,11 @@ export default function Calculator() {
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.badge}>Gratis verktyg</span>
+          <span className={styles.badge}>Laboratorieverktyg</span>
           <h1 className={styles.title}>Rekonstitueringskalkylator</h1>
           <p className={styles.subtitle}>
-            Beräkna hur mycket bakteriostatiskt vatten du behöver för att uppnå
-            önskad koncentration i din forskning.
+            Beräkna volymen bakteriostatiskt vatten som krävs för att uppnå
+            önskad molär koncentration vid rekonstituering av lyofiliserade reagenser.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export default function Calculator() {
                 min="0"
                 step="0.5"
               />
-              <span className={styles.hint}>Står på vialen, t.ex. 5mg eller 10mg</span>
+              <span className={styles.hint}>Anges på vialens etikett, t.ex. 5mg eller 10mg</span>
             </div>
 
             <div className={styles.field}>
@@ -45,7 +45,7 @@ export default function Calculator() {
                 min="0"
                 step="0.1"
               />
-              <span className={styles.hint}>Vanligt: 1-5 mg/ml beroende på protokoll</span>
+              <span className={styles.hint}>Standardintervall: 1-5 mg/ml beroende på forskningsprotokoll</span>
             </div>
           </div>
 
@@ -60,18 +60,18 @@ export default function Calculator() {
           )}
 
           <div className={styles.guide}>
-            <h3>Så här gör du</h3>
+            <h3>Laboratorieprotokoll för rekonstituering</h3>
             <ol>
-              <li>Ta ut vialen från frysen och låt den nå rumstemperatur (5-10 min)</li>
-              <li>Dra upp <strong>{isValid ? `${waterMl.toFixed(2)} ml` : '...'}</strong> bakteriostatiskt vatten med en steril spruta</li>
-              <li>Rikta strålen mot glasväggen, inte direkt på pulvret</li>
-              <li>Låt det lösa sig — svamla försiktigt, skaka inte</li>
-              <li>Förvara rekonstituerad lösning i kyl (2-8°C)</li>
+              <li>Ta ut vialen från frysförvaring och låt den equilibrera till rumstemperatur (5-10 min)</li>
+              <li>Aspirera <strong>{isValid ? `${waterMl.toFixed(2)} ml` : '...'}</strong> bakteriostatiskt vatten med en steril laboratoriepipett</li>
+              <li>Dispensera lösningsmedel längs glasväggen, inte direkt på det lyofiliserade materialet</li>
+              <li>Låt substansen solubiliseras -- svänk försiktigt, undvik kraftig agitation</li>
+              <li>Förvara rekonstituerad lösning vid 2-8°C enligt standard laboratorieprotokoll</li>
             </ol>
           </div>
 
           <div className={styles.examples}>
-            <h3>Vanliga exempel</h3>
+            <h3>Referensvärden</h3>
             <table className={styles.table}>
               <thead>
                 <tr>
