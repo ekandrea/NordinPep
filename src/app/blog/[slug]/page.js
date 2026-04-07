@@ -3,9 +3,7 @@ import { blogPosts, getBlogPostBySlug } from '@/data/blogPosts';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 
-export function generateStaticParams() {
-  return blogPosts.map((post) => ({ slug: post.slug }));
-}
+export const dynamic = 'force-dynamic';
 
 export function generateMetadata({ params }) {
   const post = getBlogPostBySlug(params.slug);
