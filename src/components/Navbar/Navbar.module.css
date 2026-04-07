@@ -166,8 +166,8 @@
 
 @media (max-width: 768px) {
   .links {
-    position: fixed;
-    top: calc(var(--nav-height) + var(--bar-height));
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -202,7 +202,6 @@
     display: block;
     position: fixed;
     inset: 0;
-    top: calc(var(--nav-height) + var(--bar-height));
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
