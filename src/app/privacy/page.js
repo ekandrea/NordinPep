@@ -16,9 +16,9 @@ export default function Privacy() {
           <div className={styles.content}>
             <h2>1. Personuppgiftsansvarig</h2>
             <p>
-              ScandiPep, org.nr [anges vid registrering], är personuppgiftsansvarig för
-              behandlingen av dina personuppgifter. Du kan kontakta oss på
-              contact@scandipep.se.
+              ScandiPep, enskild firma, är personuppgiftsansvarig för
+              behandlingen av dina personuppgifter.
+              E-post: contact@scandipep.se.
             </p>
 
             <h2>2. Vilka uppgifter vi samlar in</h2>

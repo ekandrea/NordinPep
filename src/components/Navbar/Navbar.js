@@ -10,11 +10,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '/shop', label: 'Produkter' },
+    { href: '/shop', label: 'Alla produkter' },
     { href: '/stack-engine', label: 'Stack Engine' },
-    { href: '/verktyg/kalkylator', label: 'Kalkylator' },
-    { href: '/blog', label: 'Forskning' },
-    { href: '/faq', label: 'FAQ' },
+    { href: '/about', label: 'Om oss' },
   ];
 
   return (

@@ -12,7 +12,7 @@ export default function Footer() {
               <span className={styles.logoText}>ScandiPep</span>
             </div>
             <p className={styles.tagline}>
-              Forskningspeptider av högsta kvalitet med skandinavisk precision.
+              Forskningsreagenser av högsta kvalitet.
             </p>
           </div>
 
@@ -20,39 +20,19 @@ export default function Footer() {
             <h4 className={styles.heading}>Produkter</h4>
             <Link href="/shop" className={styles.link}>Alla produkter</Link>
             <Link href="/stack-engine" className={styles.link}>Stack Engine</Link>
-            <Link href="/shop/bpc-157" className={styles.link}>BPC-157</Link>
-            <Link href="/shop/selank" className={styles.link}>Selank</Link>
-          </div>
-
-          <div className={styles.col}>
-            <h4 className={styles.heading}>Resurser</h4>
-            <Link href="/blog" className={styles.link}>Forskningsblogg</Link>
-            <Link href="/faq" className={styles.link}>Vanliga frågor</Link>
-            <Link href="/about" className={styles.link}>Om oss</Link>
           </div>
 
           <div className={styles.col}>
             <h4 className={styles.heading}>Information</h4>
+            <Link href="/about" className={styles.link}>Om oss</Link>
             <Link href="/privacy" className={styles.link}>Integritetspolicy</Link>
             <Link href="/terms" className={styles.link}>Köpvillkor</Link>
-            <span className={styles.info}>contact@scandipep.se</span>
           </div>
-        </div>
 
-        <div className={styles.badges}>
-          <div className={styles.badgeGroup}>
-            <span className={styles.badgeLabel}>Säker betalning</span>
-            <div className={styles.payIcons}>
-              <span className={styles.payIcon}>Banköverföring</span>
-            </div>
-          </div>
-          <div className={styles.badgeGroup}>
-            <span className={styles.badgeLabel}>Kvalitetsgaranti</span>
-            <div className={styles.payIcons}>
-              <span className={styles.payIcon}>COA ✓</span>
-              <span className={styles.payIcon}>≥98%</span>
-              <span className={styles.payIcon}>EU</span>
-            </div>
+          <div className={styles.col}>
+            <h4 className={styles.heading}>Kontakt</h4>
+            <span className={styles.info}>ScandiPep, enskild firma</span>
+            <span className={styles.info}>E-post: contact@scandipep.se</span>
           </div>
         </div>
 
