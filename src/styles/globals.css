@@ -10,9 +10,9 @@
 
 :root {
   --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: #1a1a25;
-  --bg-card-hover: #22222f;
+  --bg-secondary: #141420;
+  --bg-card: #1c1c2a;
+  --bg-card-hover: #26263a;
   --accent: #4a9ead;
   --accent-hover: #5bbfcf;
   --accent-glow: rgba(74, 158, 173, 0.15);

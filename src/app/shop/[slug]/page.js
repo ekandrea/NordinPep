@@ -64,12 +64,6 @@ export default function ProductPage() {
 
   return (
     <section className="section">
-      {productJsonLd && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-        />
-      )}
       <div className="container">
         <Link href="/shop" className={styles.back}>&larr; Tillbaka till produkter</Link>
 

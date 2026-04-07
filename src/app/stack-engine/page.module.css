@@ -118,6 +118,20 @@
   transition: all var(--transition);
 }
 
+.option strong {
+  display: block;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.optionDesc {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
 .option:hover {
   border-color: var(--border-light);
   color: var(--text-primary);
