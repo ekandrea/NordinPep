@@ -50,7 +50,7 @@ export const products = [
     description:
       'Baserad på tuftsin, en naturlig immunpeptid. Studerad i prekliniska modeller för GABAerg modulering och kognitiv funktion. Frekvent citerad inom neurobiologisk forskning.',
     research:
-      'Undersökt i beteendemodeller för stressrelaterade mekanismer, kognition och GABAerg modulering. Studerad för BDNF-uttryck.',
+      'Undersökt i beteendemodeller för beteendemodeller relaterade till HPA-axeln, kognition och GABAerg modulering. Studerad för BDNF-uttryck.',
     image: '/images/product-selank.svg',
   },
   {

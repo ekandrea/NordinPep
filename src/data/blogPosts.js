@@ -17,7 +17,7 @@ BPC-157 isolerades och beskrevs först av forskare som studerade de cytoprotekti
 
 Den publicerade forskningen om BPC-157 omfattar över 100 granskade studier, primärt genomförda i djurmodeller. Nyckelområden för undersökning inkluderar:
 
-**Vävnadsreparation och regeneration:** Flera studier har undersökt BPC-157 i modeller av sena-, ligament-, muskel- och benskador. Forskare har observerat accelererade läkningsprocesser i dessa prekliniska miljöer, potentiellt medierade genom tillväxtfaktormodulering och angiogenesfrämjande.
+**Vävnadsreparation och regeneration:** Flera studier har undersökt BPC-157 i modeller av sena-, ligament-, muskel- och benskador. Forskare har observerat accelererade reparationsmekanismer i dessa prekliniska miljöer, potentiellt medierade genom tillväxtfaktormodulering och angiogenesfrämjande.
 
 **Gastrointestinal funktion:** Med tanke på dess gastriska ursprung har BPC-157 studerats omfattande i modeller av inflammatoriska tarmtillstånd, magsår och tarmskador. Forskningen antyder potentiella cytoprotektiva mekanismer i mag-tarmkanalen.
 
@@ -85,7 +85,7 @@ GHK-Cu:s biologiska aktivitet anses förmedlas primärt genom dess kopparbindand
 
 **Kollagen och extracellulärt matrix:** Forskning har dokumenterat GHK-Cu:s roll i att stimulera kollagensyntes och produktion av andra extracellulärt matrix-komponenter inklusive dekorin, glykosaminoglykaner och proteoglykaner.
 
-**Fibroblastaktivitet:** Studier har visat att GHK-Cu främjar fibroblastproliferation och migration in vitro, processer centrala för sårläkning och vävnadsombildning.
+**Fibroblastaktivitet:** Studier har visat att GHK-Cu främjar fibroblastproliferation och migration in vitro, processer centrala för vävnadsreparation och vävnadsombildning.
 
 ## Forskningsapplikationer
 
@@ -187,7 +187,7 @@ Det finns över 100 publicerade studier om BPC-157, och de flesta är utförda i
 
 BPC-157 har studerats i prekliniska modeller inom flera områden:
 
-- **Vävnadsreparation:** Forskare har undersökt BPC-157 i modeller som rör senor, muskler, ligament och ben. I dessa studier har man observerat intressanta resultat kopplade till läkningsprocesser.
+- **Vävnadsreparation:** Forskare har undersökt BPC-157 i modeller som rör senor, muskler, ligament och ben. I dessa studier har man observerat intressanta resultat kopplade till reparationsmekanismer.
 - **Mag-tarmkanalen:** Eftersom peptiden härstammar från magen har den forskats för sina potentiella cytoprotektiva egenskaper i mag-tarmmodeller.
 - **Blodkärl:** BPC-157 har undersökts i prekliniska modeller som rör angiogenes, alltså bildandet av nya blodkärl. Forskare tror att detta kan vara en av mekanismerna bakom andra observerade effekter.
 - **Kväveoxidsystemet:** Studier har tittat på hur BPC-157 interagerar med kväveoxidsystemet, som spelar en viktig roll i många biologiska processer.
@@ -259,7 +259,7 @@ Priset varierar beroende på mängd och renhet. Hos ScandiPep hittar du aktuella
     date: '2026-02-05',
     readTime: '7 min läsning',
     category: 'Guide',
-    content: `Peptider har blivit ett stort ämne inom forskning och biohacking-communities. Men om du är helt ny kan det kännas överväldigande. Det finns hundratals peptider, massa förkortningar och ingen tydlig startpunkt. Den här guiden är skriven för dig som är nybörjare och vill förstå grunderna.
+    content: `Peptider har blivit ett stort ämne inom forskning och biohacking-communities. Men om du är helt ny kan det kännas överväldigande. Det finns hundratals peptider, massa förkortningar och ingen tydlig startpunkt. Den här guiden är skriven för dig som är laboratoriepersonal som är ny inom fältet och vill förstå grunderna.
 
 ## **Vad är peptider egentligen?**
 
@@ -275,7 +275,7 @@ Peptider är intressanta eftersom de är:
 - **Välstuderade:** Många peptider har undersökts i hundratals prekliniska studier.
 - **Mångsidiga:** De studeras inom allt från neurovetenskap till regenerativ forskning.
 
-## **Populära peptider för nybörjare**
+## **Populära peptider för laboratoriepersonal som är ny inom fältet**
 
 Här är några av de mest kända forskningspeptiderna och vad de studerats för:
 
@@ -333,7 +333,7 @@ Om du läser om peptider stöter du snabbt på bakteriostatiskt vatten. Det är 
 
 Du behöver bakteriostatiskt vatten för att blanda lyofiliserade (frystorkade) peptider till en användbar lösning. Utan det riskerar du kontaminering redan efter ett par dagar.
 
-## **Vanliga misstag nybörjare gör**
+## **Vanliga misstag laboratoriepersonal som är ny inom fältet gör**
 
 - **Köper från oseriösa leverantörer** utan COA
 - **Förvarar peptider fel** — till exempel i rumstemperatur
@@ -342,7 +342,7 @@ Du behöver bakteriostatiskt vatten för att blanda lyofiliserade (frystorkade) 
 
 ## **Sammanfattning**
 
-Peptider är ett fascinerande forskningsområde med hundratals studerade substanser. Som nybörjare är det bäst att börja med välstuderade peptider, välja en pålitlig leverantör och läsa på ordentligt. Allt vi diskuterat här baseras på preklinisk forskning — inte på bevisad effekt hos människor.
+Peptider är ett fascinerande forskningsområde med hundratals studerade substanser. Som laboratoriepersonal som är ny inom fältet är det bäst att börja med välstuderade peptider, välja en pålitlig leverantör och läsa på ordentligt. Allt vi diskuterat här baseras på preklinisk forskning — inte på bevisad effekt hos människor.
 
 Besök scandipep.se/shop för att se vårt utbud av tredjepartstestade forskningspeptider.
 
@@ -354,7 +354,7 @@ Forskningspeptider är lagliga att köpa i Sverige. De säljs som forskningssubs
 
 ### **Vilken peptid ska jag börja med?**
 
-Det beror på ditt intresse. BPC-157 är den mest studerade och har flest publicerade studier, så den är ett populärt val för nybörjare. GHK-Cu är ett annat bra alternativ eftersom den finns naturligt i kroppen och har en bred forskningsprofil.
+Det beror på ditt intresse. BPC-157 är den mest studerade och har flest publicerade studier, så den är ett populärt val för laboratoriepersonal som är ny inom fältet. GHK-Cu är ett annat bra alternativ eftersom den finns naturligt i kroppen och har en bred forskningsprofil.
 
 ### **Vad är bakteriostatiskt vatten?**
 
@@ -384,7 +384,7 @@ Selank har undersökts i ett antal prekliniska studier. Här är de viktigaste o
 
 ### **GABAerga systemet**
 
-GABA (gamma-aminosmörsyra) är den viktigaste hämmande signalsubstansen i hjärnan. Prekliniska studier har visat att Selank kan interagera med det GABAerga systemet. Forskare har undersökt denna mekanism i djurmodeller med fokus på ångestrelaterade beteenden. Det är viktigt att betona att detta inte betyder att Selank behandlar ångest — det betyder att forskningen har studerat denna interaktion i kontrollerade labbförhållanden.
+GABA (gamma-aminosmörsyra) är den viktigaste hämmande signalsubstansen i hjärnan. Prekliniska studier har visat att Selank kan interagera med det GABAerga systemet. Forskare har undersökt denna mekanism i djurmodeller med fokus på stressrelaterade beteendemodeller. Det är viktigt att betona att detta inte betyder att Selank modulerar dessa mekanismer — det betyder att forskningen har studerat denna interaktion i kontrollerade labbförhållanden.
 
 ### **Serotoninmetabolism**
 
