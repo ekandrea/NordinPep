@@ -28,12 +28,18 @@ export const researchInterests = [
   'Gastrointestinal Funktion & Immunologi',
 ];
 
-export const experienceLevels = ['Grundläggande protokoll', 'Standardprotokoll', 'Avancerat protokoll'];
+export const experienceLevels = [
+  'Litet test (små mängder)',
+  'Vanligt test',
+  'Större test',
+  'Avancerat test',
+];
 
 export const budgetRanges = [
   { label: 'Under 500 kr', value: 'low' },
   { label: '500 – 1 000 kr', value: 'mid' },
-  { label: '1 000+ kr', value: 'high' },
+  { label: '1 000 – 2 000 kr', value: 'high' },
+  { label: 'Över 2 000 kr', value: 'high' },
 ];
 
 export function getStackRecommendation(interest, budget) {

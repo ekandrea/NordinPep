@@ -216,6 +216,25 @@
   font-size: 1.2rem;
 }
 
+.resultDisclaimer {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.bigDisclaimer {
+  margin-top: 16px;
+  padding: 16px;
+  background: rgba(173, 138, 74, 0.08);
+  border: 1px solid rgba(173, 138, 74, 0.2);
+  border-radius: var(--radius-md);
+  color: var(--warning);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
 /* Nav */
 .nav {
   display: flex;

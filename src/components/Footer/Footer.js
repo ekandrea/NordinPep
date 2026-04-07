@@ -31,7 +31,8 @@ export default function Footer() {
 
           <div className={styles.col}>
             <h4 className={styles.heading}>Kontakt</h4>
-            <span className={styles.info}>ScandiPep, enskild firma</span>
+            <span className={styles.info}>ScandiPep drivs av Andrea Ekeberg, enskild firma</span>
+            <span className={styles.info}>Nytorgsbacken 59, 252 45 Helsingborg</span>
             <span className={styles.info}>E-post: contact@scandipep.se</span>
           </div>
         </div>
@@ -45,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <span>&copy; {new Date().getFullYear()} ScandiPep — Forskningsreagenser</span>
+          <span>&copy; 2026 ScandiPep — Forskningsreagenser</span>
         </div>
       </div>
     </footer>

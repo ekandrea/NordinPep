@@ -7,17 +7,11 @@ import { getProductById } from '@/data/products';
 import { researchInterests, experienceLevels, budgetRanges, getStackRecommendation } from '@/data/stackLogic';
 import styles from './page.module.css';
 
-const interestDescriptions = {
+const interestLabels = {
   'Vävnadsreparation & Regeneration': 'Hur celler och vävnader reparerar sig',
   'Neurobiologi & Kognition': 'Hur hjärnan och nerverna fungerar',
   'Cellulär Åldring & Kollagen': 'Hur celler åldras och hud fungerar',
   'Gastrointestinal Funktion & Immunologi': 'Hur immunförsvaret och mage-tarm fungerar',
-};
-
-const levelDescriptions = {
-  'Grundläggande protokoll': 'Litet test (små mängder)',
-  'Standardprotokoll': 'Vanligt test',
-  'Avancerat protokoll': 'Större test',
 };
 
 export default function StackEngine() {
@@ -71,11 +65,10 @@ export default function StackEngine() {
     <section className="section">
       <div className="container">
         <div className={styles.header}>
-          <span className={styles.badge}>Hitta rätt labbreagenser på 30 sekunder</span>
-          <h1 className={styles.title}>Stack Engine</h1>
+          <h1 className={styles.title}>Stack Engine — Hitta rätt labbreagenser på 30 sekunder</h1>
           <p className={styles.subtitle}>
-            Välj vad du vill testa i ditt labb. Vi föreslår en smart kombination
-            av reagenser som passar ditt test och din budget.
+            Välj vad du vill testa i ditt labb.
+            Vi föreslår en smart kombination av reagenser som passar ditt test och din budget.
             Allt säljs uteslutande för forskning i labb — inget annat.
           </p>
         </div>
@@ -103,8 +96,7 @@ export default function StackEngine() {
                     className={`${styles.option} ${interest === ri ? styles.optionActive : ''}`}
                     onClick={() => setInterest(ri)}
                   >
-                    <strong>{interestDescriptions[ri]}</strong>
-                    <span className={styles.optionDesc}>{ri}</span>
+                    <strong>{interestLabels[ri]}</strong>
                   </button>
                 ))}
               </div>
@@ -121,8 +113,7 @@ export default function StackEngine() {
                     className={`${styles.option} ${experience === el ? styles.optionActive : ''}`}
                     onClick={() => setExperience(el)}
                   >
-                    <strong>{levelDescriptions[el]}</strong>
-                    <span className={styles.optionDesc}>{el}</span>
+                    {el}
                   </button>
                 ))}
               </div>
@@ -135,8 +126,8 @@ export default function StackEngine() {
               <div className={styles.options}>
                 {budgetRanges.map((br) => (
                   <button
-                    key={br.value}
-                    className={`${styles.option} ${budget === br.value ? styles.optionActive : ''}`}
+                    key={br.label}
+                    className={`${styles.option} ${budget === br.value && br.label === budgetRanges.find(b => b.value === budget)?.label ? styles.optionActive : ''}`}
                     onClick={() => setBudget(br.value)}
                   >
                     {br.label}
@@ -151,6 +142,9 @@ export default function StackEngine() {
               <h2 className={styles.question}>Här är förslag på labbreagenser för ditt test</h2>
               <p className={styles.resultMeta}>
                 Baserat på dina val har vi satt ihop en smart kombination av forskningsreagenser.
+              </p>
+              <p className={styles.resultDisclaimer}>
+                Alla produkter är endast avsedda för forskning i labb och får inte användas på människor eller djur.
               </p>
               <div className={styles.resultList}>
                 {recommendation.map((product) => (
@@ -170,9 +164,10 @@ export default function StackEngine() {
                 <span>Totalt</span>
                 <strong>{totalPrice} kr</strong>
               </div>
-              <div className={styles.disclaimer}>
-                Alla produkter är endast avsedda för forskning i labb och får inte
-                användas på människor eller djur.
+              <div className={styles.bigDisclaimer}>
+                ⚠️ VIKTIGT: Detta är forskningsreagenser för labbbruk. Inga påståenden
+                görs om effekt på människor eller djur. All användning sker på eget
+                ansvar enligt svensk lag.
               </div>
               <button className="btn btn-primary" onClick={addStackToCart} style={{ width: '100%' }}>
                 Lägg hela förslaget i varukorgen — {totalPrice} kr
@@ -200,7 +195,6 @@ export default function StackEngine() {
 
           {step === 3 && (
             <div className={styles.nav}>
-              <button className="btn btn-ghost" onClick={handleBack}>&larr; Ändra val</button>
               <button className="btn btn-secondary" onClick={reset}>Gör om valet</button>
             </div>
           )}
