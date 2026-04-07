@@ -32,6 +32,7 @@
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.4);
   --max-width: 1200px;
   --nav-height: 72px;
+  --bar-height: 34px;
   --transition: 0.2s ease;
 }
 

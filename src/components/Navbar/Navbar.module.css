@@ -1,6 +1,6 @@
 .nav {
   position: fixed;
-  top: 34px;
+  top: var(--bar-height);
   left: 0;
   right: 0;
   z-index: 100;
@@ -167,7 +167,7 @@
 @media (max-width: 768px) {
   .links {
     position: fixed;
-    top: calc(var(--nav-height) + 34px);
+    top: calc(var(--nav-height) + var(--bar-height));
     left: 0;
     right: 0;
     flex-direction: column;
@@ -202,7 +202,7 @@
     display: block;
     position: fixed;
     inset: 0;
-    top: calc(var(--nav-height) + 34px);
+    top: calc(var(--nav-height) + var(--bar-height));
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
