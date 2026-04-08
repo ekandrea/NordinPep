@@ -5,6 +5,7 @@ import Footer from '@/components/Footer/Footer';
 import CartDrawer from '@/components/CartDrawer/CartDrawer';
 import CookieConsent from '@/components/CookieConsent/CookieConsent';
 import AnnouncementBar from '@/components/AnnouncementBar/AnnouncementBar';
+import ExitPopup from '@/components/ExitPopup/ExitPopup';
 import Script from 'next/script';
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -78,6 +79,7 @@ export default function RootLayout({ children }) {
           <Footer />
           <CartDrawer />
           <CookieConsent />
+          <ExitPopup />
         </CartProvider>
       </body>
     </html>

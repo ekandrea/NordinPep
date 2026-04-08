@@ -20,7 +20,22 @@ export default function StackEngine() {
   const [experience, setExperience] = useState(null);
   const [budget, setBudget] = useState(null);
   const [recommendation, setRecommendation] = useState(null);
+  const [wizardEmail, setWizardEmail] = useState('');
+  const [emailSent, setEmailSent] = useState(false);
   const { addItem } = useCart();
+
+  const handleWizardEmail = async (e) => {
+    e.preventDefault();
+    if (!wizardEmail) return;
+    try {
+      await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: wizardEmail }),
+      });
+      setEmailSent(true);
+    } catch {}
+  };
 
   const handleNext = () => {
     if (step < 2) {
@@ -164,6 +179,35 @@ export default function StackEngine() {
                 <span>Totalt</span>
                 <strong>{totalPrice} kr</strong>
               </div>
+              <div className={styles.emailCapture}>
+                {emailSent ? (
+                  <p className={styles.emailSuccess}>Tack! Vi skickar ditt reagensförslag + analysbevis till din e-post.</p>
+                ) : (
+                  <>
+                    <h3 className={styles.emailTitle}>Din rekommendation är klar!</h3>
+                    <p className={styles.emailText}>
+                      Fyll i din e-post så skickar vi ditt personliga reagensförslag + analysbevis från batchen direkt till dig.
+                    </p>
+                    <form className={styles.emailForm} onSubmit={handleWizardEmail}>
+                      <input
+                        type="email"
+                        value={wizardEmail}
+                        onChange={(e) => setWizardEmail(e.target.value)}
+                        placeholder="Din e-postadress"
+                        className={styles.emailInput}
+                      />
+                      <button type="submit" className={styles.emailBtn}>Skicka till mig</button>
+                    </form>
+                    <p className={styles.emailDisclaimer}>
+                      Alla produkter säljs uteslutande för laboratorie- och forskningsändamål.
+                      De får inte användas på människor eller djur. Genom att handla eller
+                      registrera dig bekräftar du att du är minst 18 år och att produkterna
+                      bara används i forskning.
+                    </p>
+                  </>
+                )}
+              </div>
+
               <div className={styles.bigDisclaimer}>
                 ⚠️ VIKTIGT: Detta är forskningsreagenser för labbbruk. Inga påståenden
                 görs om effekt på människor eller djur. All användning sker på eget

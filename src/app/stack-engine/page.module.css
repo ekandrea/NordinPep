@@ -222,6 +222,78 @@
   font-style: italic;
 }
 
+.emailCapture {
+  padding: 24px;
+  background: var(--accent-glow);
+  border: 1px solid rgba(74, 158, 173, 0.25);
+  border-radius: var(--radius-lg);
+  margin-top: 16px;
+}
+
+.emailTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.emailText {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.emailForm {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.emailBtn {
+  padding: 10px 18px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all var(--transition);
+}
+
+.emailBtn:hover {
+  background: var(--accent-hover);
+}
+
+.emailDisclaimer {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.emailSuccess {
+  color: var(--success);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 8px 0;
+}
+
 .bigDisclaimer {
   margin-top: 16px;
   padding: 16px;
