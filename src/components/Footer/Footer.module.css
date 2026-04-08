@@ -174,5 +174,52 @@
 @media (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer {
+    padding: 40px 0 0;
+    margin-top: 48px;
+  }
+
+  .inner {
+    padding: 0 14px;
+  }
+
+  .tagline {
+    font-size: 0.82rem;
+  }
+
+  .heading {
+    font-size: 0.78rem;
+  }
+
+  .link {
+    font-size: 0.82rem;
+    word-break: break-word;
+  }
+
+  .info {
+    font-size: 0.82rem;
+    word-break: break-word;
+  }
+
+  .badges {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px 0;
+  }
+
+  .payIcons {
+    flex-wrap: wrap;
+  }
+
+  .disclaimer p {
+    font-size: 0.72rem;
+  }
+
+  .bottom {
+    font-size: 0.72rem;
+    padding: 14px 0;
   }
 }

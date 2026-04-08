@@ -333,4 +333,151 @@
   .card {
     padding: 24px;
   }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .question {
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+
+  .option {
+    padding: 12px 14px;
+    font-size: 0.88rem;
+  }
+
+  .optionDesc {
+    font-size: 0.78rem;
+  }
+
+  .resultItem {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .resultInfo strong {
+    font-size: 0.88rem;
+  }
+
+  .resultTotal strong {
+    font-size: 1.05rem;
+  }
+
+  .emailCapture {
+    padding: 16px;
+  }
+
+  .emailForm {
+    flex-direction: column;
+  }
+
+  .emailBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .bigDisclaimer {
+    font-size: 0.78rem;
+    padding: 12px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .option {
+    padding: 10px 12px;
+    font-size: 0.82rem;
+  }
+
+  .optionDesc {
+    font-size: 0.72rem;
+  }
+
+  .progress {
+    gap: 10px;
+  }
+
+  .progressDot {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+
+  .resultItem {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .resultImage {
+    width: 40px;
+    height: 52px;
+  }
+
+  .resultInfo strong {
+    font-size: 0.82rem;
+    word-break: break-word;
+  }
+
+  .resultPrice {
+    font-size: 0.85rem;
+  }
+
+  .resultTotal {
+    font-size: 0.92rem;
+  }
+
+  .emailCapture {
+    padding: 12px;
+  }
+
+  .emailTitle {
+    font-size: 0.95rem;
+  }
+
+  .emailText {
+    font-size: 0.8rem;
+  }
+
+  .emailInput {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+
+  .emailBtn {
+    font-size: 0.82rem;
+    padding: 8px 14px;
+  }
+
+  .bigDisclaimer {
+    font-size: 0.72rem;
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  .subtitle {
+    font-size: 0.88rem;
+  }
+
+  .badge {
+    font-size: 0.72rem;
+    padding: 4px 12px;
+  }
 }

@@ -317,14 +317,86 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    word-break: break-word;
+  }
+
+  .subtitle {
+    font-size: 0.92rem;
   }
 
   .trustGrid {
     grid-template-columns: 1fr;
   }
 
+  .trustCard {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .trustTitle {
+    font-size: 0.82rem;
+  }
+
+  .trustDesc {
+    font-size: 0.72rem;
+  }
+
   .ctas {
     flex-direction: column;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+    word-break: break-word;
+  }
+
+  .stackCard {
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .stackTitle {
+    font-size: 1.4rem;
+    word-break: break-word;
+  }
+
+  .stackDesc {
+    font-size: 0.88rem;
+  }
+
+  .stackStep {
+    font-size: 0.82rem;
+    padding: 12px 14px;
+  }
+
+  .stackResult {
+    font-size: 0.85rem;
+    padding: 12px 14px;
+  }
+
+  .reviewCard {
+    padding: 20px;
+  }
+
+  .reviewText {
+    font-size: 0.88rem;
+  }
+
+  .introTitle {
+    font-size: 1.4rem;
+  }
+
+  .introText {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .badge {
+    font-size: 0.72rem;
+    padding: 4px 12px;
   }
 }

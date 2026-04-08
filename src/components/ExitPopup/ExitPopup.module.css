@@ -127,10 +127,43 @@
 
 @media (max-width: 480px) {
   .popup {
-    padding: 28px;
+    padding: 24px 18px;
+  }
+
+  .title {
+    font-size: 1.15rem;
+    word-break: break-word;
+  }
+
+  .text {
+    font-size: 0.82rem;
   }
 
   .form {
     flex-direction: column;
+  }
+
+  .input {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 10px 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .disclaimer {
+    font-size: 0.65rem;
+  }
+
+  .success h2 {
+    font-size: 1.15rem;
+  }
+
+  .success p {
+    font-size: 0.85rem;
   }
 }

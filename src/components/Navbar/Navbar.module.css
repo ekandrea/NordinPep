@@ -205,4 +205,38 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
+
+  .link {
+    word-break: break-word;
+  }
+
+  .logoText {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 0 14px;
+  }
+
+  .logoText {
+    font-size: 0.95rem;
+  }
+
+  .logoMark {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+
+  .cartBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .menuBtn {
+    width: 36px;
+    height: 36px;
+  }
 }

@@ -327,4 +327,114 @@
     grid-template-columns: 1fr;
     max-width: 400px;
   }
+
+  .name {
+    font-size: 1.6rem;
+    word-break: break-word;
+  }
+
+  .price {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.88rem;
+  }
+
+  .research {
+    padding: 16px;
+  }
+
+  .research p {
+    font-size: 0.82rem;
+  }
+
+  .volumeRow {
+    font-size: 0.82rem;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .trustStrip {
+    gap: 10px;
+  }
+
+  .trustStrip span {
+    font-size: 0.72rem;
+  }
+
+  .disclaimer p {
+    font-size: 0.72rem;
+  }
+
+  .imageWrap {
+    padding: 24px;
+  }
+
+  .image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    font-size: 1.15rem;
+  }
+
+  .subtitle {
+    font-size: 0.88rem;
+  }
+
+  .specLabel {
+    font-size: 0.68rem;
+  }
+
+  .specValue {
+    font-size: 0.85rem;
+    word-break: break-word;
+  }
+
+  .spec {
+    padding: 10px 12px;
+  }
+
+  .volumeBox {
+    padding: 12px;
+  }
+
+  .volumeBox h3 {
+    font-size: 0.78rem;
+  }
+
+  .volumeRow {
+    font-size: 0.78rem;
+  }
+
+  .volumeSave {
+    font-size: 0.78rem;
+  }
+
+  .relatedTitle {
+    font-size: 1.15rem;
+  }
+
+  .related {
+    margin-top: 48px;
+  }
+
+  .back {
+    font-size: 0.82rem;
+  }
+
+  .imageWrap {
+    padding: 16px;
+  }
+
+  .image {
+    height: 180px;
+  }
 }

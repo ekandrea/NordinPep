@@ -51,4 +51,26 @@
   .text {
     font-size: 0.68rem;
   }
+
+  .close {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bar {
+    padding: 4px 8px;
+    font-size: 0.62rem;
+  }
+
+  .text {
+    font-size: 0.62rem;
+    word-break: break-word;
+    padding-right: 20px;
+  }
+
+  .close {
+    font-size: 0.85rem;
+    right: -4px;
+  }
 }

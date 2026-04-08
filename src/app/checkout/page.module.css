@@ -220,3 +220,111 @@
     order: -1;
   }
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .paymentMethod {
+    padding: 18px;
+  }
+
+  .paymentValue {
+    font-size: 1.15rem;
+    word-break: break-all;
+  }
+
+  .summary {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.35rem;
+    word-break: break-word;
+  }
+
+  .formTitle {
+    font-size: 1.05rem;
+  }
+
+  .field label {
+    font-size: 0.78rem;
+  }
+
+  .field input,
+  .field select {
+    font-size: 0.88rem;
+    padding: 10px 12px;
+  }
+
+  .payBtn {
+    font-size: 0.92rem;
+    padding: 12px;
+  }
+
+  .summaryTitle {
+    font-size: 1rem;
+  }
+
+  .summaryItem {
+    font-size: 0.82rem;
+  }
+
+  .summaryRow {
+    font-size: 0.82rem;
+  }
+
+  .summaryTotal {
+    font-size: 0.95rem;
+  }
+
+  .paymentLabel {
+    font-size: 0.95rem;
+  }
+
+  .paymentDesc {
+    font-size: 0.82rem;
+  }
+
+  .paymentValue {
+    font-size: 1.05rem;
+    padding: 10px 12px;
+  }
+
+  .paymentNote {
+    font-size: 0.72rem;
+  }
+
+  .paymentDetails {
+    font-size: 0.82rem;
+  }
+
+  .paymentDivider {
+    font-size: 0.78rem;
+  }
+
+  .paymentInfo p {
+    font-size: 0.78rem;
+  }
+
+  .paymentMethod {
+    padding: 14px;
+  }
+
+  .summary {
+    padding: 16px;
+  }
+
+  .error {
+    font-size: 0.82rem;
+    padding: 10px 12px;
+  }
+}
