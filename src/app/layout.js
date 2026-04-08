@@ -24,9 +24,10 @@ export const metadata = {
     'Premium forskningspeptider med ≥98% renhet. COA-verifierade, fri frakt över 500 kr, snabb leverans. Uteslutande för forskningsändamål.',
   keywords: ['peptider', 'forskningspeptider', 'BPC-157', 'Selank', 'GHK-Cu', 'köpa peptider', 'peptider Sverige'],
   openGraph: {
-    title: 'ScandiPep — Forskningspeptider av Högsta Kvalitet',
-    description: 'Premium forskningspeptider med skandinavisk precision. COA-verifierade, fri frakt, snabb leverans.',
+    title: 'ScandiPep — Forskningsreagenser av Högsta Kvalitet',
+    description: 'Forskningsreagenser med ≥98% renhet. COA-verifierade, fri frakt, snabb leverans i Sverige.',
     siteName: 'ScandiPep',
+    images: [{ url: 'https://scandipep.se/og-image.png', width: 1200, height: 630 }],
     locale: 'sv_SE',
     type: 'website',
   },
