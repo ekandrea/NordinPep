@@ -26,6 +26,16 @@ export async function POST(request) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
+    // Skicka välkomstmejl via Resend
+    try {
+      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://scandipep.se';
+      await fetch(`${siteUrl}/api/send-welcome`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+    } catch {}
+
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: 'Något gick fel' }, { status: 500 });
