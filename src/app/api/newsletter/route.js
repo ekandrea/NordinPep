@@ -34,7 +34,7 @@ export async function POST(request) {
       try {
         const resend = new Resend(resendKey);
         await resend.emails.send({
-          from: 'ScandiPep <onboarding@resend.dev>',
+          from: 'ScandiPep <contact@scandipep.se>',
           to: email,
           subject: 'Välkommen till ScandiPep — 15% rabatt på din första beställning',
           html: `
