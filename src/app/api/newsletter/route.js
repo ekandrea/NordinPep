@@ -36,31 +36,31 @@ export async function POST(request) {
         await resend.emails.send({
           from: 'ScandiPep <contact@scandipep.se>',
           to: email,
-          subject: 'Välkommen till ScandiPep — 15% rabatt på din första beställning',
+          subject: 'Du är med på listan — ScandiPep lanserar snart',
           html: `
             <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #0a0a0f; color: #f0f0f5; padding: 40px; border-radius: 12px;">
               <div style="text-align: center; margin-bottom: 32px;">
                 <span style="display: inline-block; background: #4a9ead; color: #fff; font-weight: 800; font-size: 24px; padding: 12px 20px; border-radius: 10px;">SP</span>
                 <h1 style="font-size: 22px; margin: 16px 0 0;">ScandiPep</h1>
               </div>
-              <h2 style="font-size: 20px; color: #f0f0f5; margin-bottom: 12px;">Välkommen!</h2>
+              <h2 style="font-size: 20px; color: #f0f0f5; margin-bottom: 12px;">Du är med!</h2>
               <p style="color: #8a8a9a; line-height: 1.7; font-size: 15px;">
                 Tack för att du registrerade dig hos ScandiPep. Du är nu med på vår lanseringslista
-                och bland de första som får veta när vi öppnar.
+                och bland de allra första som får veta när vi öppnar.
               </p>
               <div style="background: #1c1c2a; border: 1px solid #2a2a3a; border-radius: 10px; padding: 24px; margin: 24px 0; text-align: center;">
-                <p style="color: #8a8a9a; font-size: 13px; margin: 0 0 8px;">Din rabattkod (15% på första beställningen):</p>
-                <span style="display: inline-block; background: #4a9ead; color: #fff; font-size: 22px; font-weight: 700; padding: 12px 28px; border-radius: 8px; letter-spacing: 2px;">SCANDI15</span>
-                <p style="color: #5a5a6a; font-size: 12px; margin: 12px 0 0;">Giltig i 60 dagar från registrering.</p>
+                <p style="color: #f0f0f5; font-size: 16px; font-weight: 600; margin: 0 0 8px;">Vad du får vid lansering:</p>
+                <p style="color: #4a9ead; font-size: 18px; font-weight: 700; margin: 0;">15% rabatt — din personliga kod skickas samma sekund vi öppnar</p>
+                <p style="color: #5a5a6a; font-size: 12px; margin: 12px 0 0;">Koden är unik för dig och kan bara användas en gång.</p>
               </div>
               <h3 style="font-size: 16px; color: #f0f0f5; margin: 24px 0 12px;">Vad händer nu?</h3>
               <p style="color: #8a8a9a; line-height: 1.7; font-size: 15px;">
                 Vi håller på att färdigställa vårt sortiment av forskningsreagenser.
-                Du får ett mejl så fort vi öppnar — med din rabattkod redo att användas.
+                Du får ett mejl samma sekund vi lanserar — med din unika rabattkod redo att användas.
               </p>
               <div style="margin: 28px 0; text-align: center;">
                 <a href="https://scandipep.se/stack-engine" style="display: inline-block; background: #4a9ead; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px;">
-                  Testa Stack Engine
+                  Testa Stack Engine — hitta rätt reagenser
                 </a>
               </div>
               <hr style="border: none; border-top: 1px solid #2a2a3a; margin: 28px 0;" />
