@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Kassa | ScandiPep',
+  title: 'Kassa',
   description: 'Slutför din beställning hos ScandiPep. Snabb leverans inom 2-4 dagar i Sverige.',
 };
 

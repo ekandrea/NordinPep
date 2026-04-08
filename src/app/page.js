@@ -34,9 +34,9 @@ export default function Home() {
             Registrera dig för att få uppdateringar.
           </p>
           <div className={styles.ctas}>
-            <a href="#notify" className="btn btn-primary">
+            <button className="btn btn-primary" onClick={() => document.getElementById('notify')?.scrollIntoView({ behavior: 'smooth' })}>
               Registrera för forskningsuppdateringar
-            </a>
+            </button>
             <Link href="/shop" className="btn btn-secondary">
               Se laboratoriekemikalier
             </Link>

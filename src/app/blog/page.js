@@ -3,7 +3,7 @@ import { blogPosts } from '@/data/blogPosts';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Peptidforskning & Laboratorieguidar — Vetenskapliga artiklar | ScandiPep',
+  title: 'Peptidforskning & Laboratorieguidar',
   description: 'Vetenskapliga artiklar om forskningspeptider. Genomgångar av BPC-157, Selank, GHK-Cu, rekonstituering och analysbevis för laboratoriepersonal.',
 };
 

@@ -60,7 +60,8 @@ export default function Checkout() {
       <section className="section">
         <div className="container" style={{ textAlign: 'center' }}>
           <h1 className={styles.title}>Kassa</h1>
-          <p style={{ color: 'var(--text-secondary)' }}>Din varukorg är tom.</p>
+          <p style={{ color: 'var(--text-secondary)', marginBottom: 24 }}>Din varukorg är tom.</p>
+          <a href="/shop" className="btn btn-primary">Se alla produkter</a>
         </div>
       </section>
     );

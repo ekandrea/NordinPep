@@ -21,10 +21,12 @@ export default function Newsletter() {
         setStatus('success');
         setEmail('');
       } else {
-        setStatus('idle');
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 3000);
       }
     } catch {
-      setStatus('idle');
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
     }
   };
 
@@ -51,10 +53,13 @@ export default function Newsletter() {
                 required
                 className={styles.input}
               />
-              <button type="submit" className={styles.btn}>
-                Prenumerera
+              <button type="submit" className={styles.btn} disabled={status === 'loading'}>
+                {status === 'loading' ? '...' : 'Prenumerera'}
               </button>
             </form>
+          )}
+          {status === 'error' && (
+            <p style={{ color: 'var(--danger)', fontSize: '0.8rem', marginTop: 8 }}>Något gick fel. Försök igen.</p>
           )}
         </div>
       </div>

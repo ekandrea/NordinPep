@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Vanliga Frågor om Peptider — Är Peptider Lagligt i Sverige? | ScandiPep',
+  title: 'Vanliga Frågor om Peptider — Är Peptider Lagligt i Sverige?',
   description: 'Svar på vanliga frågor om forskningspeptider. Är peptider lagligt? Hur förvarar man dem? Vad är ett analysbevis? Allt du behöver veta.',
 };
 

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Varukorg | ScandiPep',
+  title: 'Varukorg',
   description: 'Din varukorg hos ScandiPep. Forskningspeptider med fri frakt över 500 kr.',
 };
 
