@@ -37,14 +37,14 @@ export default function Newsletter() {
           <div className={styles.text}>
             <h3 className={styles.title}>Bli först med att veta när vi lanserar</h3>
             <p className={styles.desc}>
-              Registrera din e-post och få 10% rabatt på din första beställning
+              Registrera din e-post och få 15% rabatt på din första beställning
               + förtur vid lansering.
             </p>
           </div>
           {status === 'success' ? (
             <div className={styles.successBox}>
               <span className={styles.successIcon}>✓</span>
-              <p className={styles.success}>Tack! Du är med på listan. Du får 10% rabatt vid lansering.</p>
+              <p className={styles.success}>Tack! Du är med på listan. Du får 15% rabatt vid lansering.</p>
             </div>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
