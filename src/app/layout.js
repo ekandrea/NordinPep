@@ -13,8 +13,12 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 export const metadata = {
   title: {
-    default: 'ScandiPep — Forskningspeptider | Skandinavisk Kvalitet',
+    default: 'ScandiPep — Forskningsreagenser | Skandinavisk Kvalitet',
     template: '%s | ScandiPep',
+  },
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
   },
   description:
     'Premium forskningspeptider med ≥98% renhet. COA-verifierade, fri frakt över 500 kr, snabb leverans. Uteslutande för forskningsändamål.',
