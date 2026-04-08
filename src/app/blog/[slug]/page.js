@@ -7,8 +7,9 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const post = getBlogPostBySlug(params.slug);
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
   if (!post) return {};
   return {
     title: post.title,
@@ -16,8 +17,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function BlogPost({ params }) {
-  const post = getBlogPostBySlug(params.slug);
+export default async function BlogPost({ params }) {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
   if (!post) notFound();
 
   const paragraphs = post.content.split('\n\n');
@@ -62,9 +64,8 @@ export default function BlogPost({ params }) {
 
           <div className={styles.disclaimer}>
             <p>
-              Denna artikel tillhandahålls i utbildnings- och informationssyfte. Alla
-              nämnda produkter är avsedda för forsknings- och laboratoriebruk. Ej avsedda
-              för mänsklig konsumtion.
+              Alla produkter på scandipep.se säljs uteslutande för laboratorie- och
+              forskningsändamål. De får inte användas på människor eller djur.
             </p>
           </div>
         </article>
