@@ -18,18 +18,19 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Ogiltig e-postadress' }, { status: 400 });
     }
 
+    // Försök insert först, ignorera duplicate error
     const { error } = await supabase
       .from('nordicpep_newsletter')
-      .upsert({ email }, { onConflict: 'email' });
+      .insert({ email });
 
-    if (error) {
+    // Om duplicate = redan registrerad, det är OK
+    if (error && !error.message.includes('duplicate') && !error.code?.includes('23505')) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
     // Skicka välkomstmejl via Resend
     try {
-      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://scandipep.se';
-      await fetch(`${siteUrl}/api/send-welcome`, {
+      await fetch(`${process.env.NEXT_PUBLIC_SITE_URL || 'https://scandipep.se'}/api/send-welcome`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
