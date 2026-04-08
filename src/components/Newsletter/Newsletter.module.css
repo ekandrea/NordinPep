@@ -69,9 +69,33 @@
   background: var(--accent-hover);
 }
 
+.successBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: rgba(74, 173, 106, 0.1);
+  border: 1px solid rgba(74, 173, 106, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.successIcon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--success);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
 .success {
   color: var(--success);
   font-weight: 500;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {

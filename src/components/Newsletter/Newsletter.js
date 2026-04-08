@@ -42,7 +42,10 @@ export default function Newsletter() {
             </p>
           </div>
           {status === 'success' ? (
-            <p className={styles.success}>Tack! Du är med på listan. Du får 10% rabatt vid lansering.</p>
+            <div className={styles.successBox}>
+              <span className={styles.successIcon}>✓</span>
+              <p className={styles.success}>Tack! Du är med på listan. Du får 10% rabatt vid lansering.</p>
+            </div>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
               <input
